@@ -93,13 +93,13 @@ export default function EventsPage() {
         <div className="p-5">
           <h3
             className="text-white font-bold text-base mb-1"
-            style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+            style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
           >
             {event.title}
           </h3>
           <p
             className="text-[#e5a04b] text-xs mb-2"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             {new Date(event.event_date).toLocaleDateString("en-IN", {
               year: "numeric",
@@ -111,7 +111,7 @@ export default function EventsPage() {
           </p>
           <p
             className="text-gray-500 text-sm"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             {event.description}
           </p>
@@ -133,13 +133,13 @@ export default function EventsPage() {
           >
             <p
               className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Club Activities —
             </p>
             <h1
               className="text-3xl md:text-5xl font-bold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               EVENTS
             </h1>
@@ -149,7 +149,7 @@ export default function EventsPage() {
           <div className="mb-16">
             <h2
               className="text-xl font-bold text-white mb-6 flex items-center gap-2"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               <span className="w-2 h-2 rounded-full bg-[#e5a04b] animate-pulse" />
               Upcoming Events
@@ -171,7 +171,7 @@ export default function EventsPage() {
               <div className="rounded-xl border border-white/10 bg-[#0c0c0c]/60 py-16 text-center">
                 <p
                   className="text-gray-500 text-sm"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 >
                   No upcoming events — stay tuned!
                 </p>
@@ -187,7 +187,7 @@ export default function EventsPage() {
           <div>
             <h2
               className="text-xl font-bold text-gray-400 mb-6"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               Past Events
             </h2>
@@ -208,7 +208,7 @@ export default function EventsPage() {
               <div className="rounded-xl border border-white/10 bg-[#0c0c0c]/60 py-16 text-center opacity-80">
                 <p
                   className="text-gray-500 text-sm"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 >
                   No past events yet.
                 </p>

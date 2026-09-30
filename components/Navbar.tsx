@@ -82,11 +82,11 @@ export default function Navbar() {
           <div>
             <span
               className="font-bold text-lg tracking-wider bg-gradient-to-r from-[#b7682c] to-[#c87938] bg-clip-text text-transparent"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               ASTROSCI
             </span>
-            <p className="text-[10px] text-gray-400 tracking-widest -mt-1 uppercase" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+            <p className="text-[10px] text-gray-400 tracking-widest -mt-1 uppercase" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
               {siteConfig.university}
             </p>
           </div>
@@ -100,7 +100,7 @@ export default function Navbar() {
                 <motion.span
                   className="relative px-4 py-2 text-sm font-semibold cursor-pointer group"
                   style={{
-                    fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif",
+                    fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif",
                     background: "linear-gradient(135deg,#b7682c,#e5a04b)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
@@ -118,7 +118,7 @@ export default function Navbar() {
               <Link key={item.label} href={item.href}>
                 <motion.span
                   className="relative px-4 py-2 text-sm text-gray-300 hover:text-white transition-colors group cursor-pointer"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 * i + 0.3 }}
@@ -162,7 +162,7 @@ export default function Navbar() {
               <Link href="/auth">
                 <motion.span
                   className="flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium border border-[#b7682c]/60 text-[#e5a04b] hover:bg-[#b7682c]/20 hover:border-[#b7682c] hover:shadow-[0_0_20px_rgba(183,104,44,0.4)] transition-all duration-300 cursor-pointer"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.97 }}
                   initial={{ opacity: 0 }}
@@ -176,7 +176,7 @@ export default function Navbar() {
               <Link href="/auth?tab=signup">
                 <motion.span
                   className="inline-flex px-5 py-2 rounded-full text-sm font-medium bg-gradient-to-r from-[#b7682c] to-[#8f4e25] text-white shadow-[0_0_20px_rgba(183,104,44,0.3)] hover:shadow-[0_0_30px_rgba(183,104,44,0.5)] transition-all duration-300 cursor-pointer"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.97 }}
                   initial={{ opacity: 0 }}
@@ -220,7 +220,7 @@ export default function Navbar() {
                   <span
                     className="inline-block w-full text-center py-2.5 rounded-full text-sm font-semibold text-white"
                     style={{
-                      fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif",
+                      fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif",
                       background: "linear-gradient(135deg,#8f4e25,#b7682c,#e5a04b)",
                     }}
                   >
@@ -232,7 +232,7 @@ export default function Navbar() {
                   key={item.label}
                   href={item.href}
                   className="block py-3 text-gray-300 hover:text-[#e5a04b] border-b border-white/5 text-sm tracking-wider"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   onClick={() => setMenuOpen(false)}
                 >
                   {item.label}
@@ -243,7 +243,7 @@ export default function Navbar() {
               <Link href="/profile" className="block mt-4" onClick={() => setMenuOpen(false)}>
                 <span
                   className="flex items-center justify-center gap-2 w-full py-2 rounded-full border border-[#b7682c]/60 text-[#e5a04b] text-sm"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 >
                   <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" aria-hidden="true">
                     <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
@@ -256,7 +256,7 @@ export default function Navbar() {
                 <Link href="/auth" className="block mt-4">
                   <span
                     className="block w-full py-2 rounded-full border border-[#b7682c]/60 text-[#e5a04b] text-sm text-center"
-                    style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                    style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   >
                     Login
                   </span>
@@ -264,7 +264,7 @@ export default function Navbar() {
                 <Link href="/auth?tab=signup" className="block mt-2">
                   <span
                     className="block w-full py-2 rounded-full bg-gradient-to-r from-[#b7682c] to-[#8f4e25] text-white text-sm text-center"
-                    style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                    style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   >
                     Join Now
                   </span>

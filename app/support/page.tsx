@@ -32,19 +32,19 @@ export default function SupportPage() {
           >
             <p
               className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Get in Touch —
             </p>
             <h1
               className="text-3xl md:text-5xl font-bold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               SUPPORT
             </h1>
             <p
               className="text-gray-500 text-sm mt-3"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               Sponsor us, make a donation, or send us a message
             </p>
@@ -60,7 +60,7 @@ export default function SupportPage() {
             <div>
               <label
                 className="text-gray-400 text-xs mb-1.5 block"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               >
                 Name
               </label>
@@ -70,14 +70,14 @@ export default function SupportPage() {
                 onChange={(e) => setName(e.target.value)}
                 required
                 className="w-full px-4 py-3 rounded-xl bg-[#0b0b0b] border border-white/10 text-white text-sm focus:border-[#e5a04b]/50 focus:outline-none transition-colors"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 placeholder="Your name"
               />
             </div>
             <div>
               <label
                 className="text-gray-400 text-xs mb-1.5 block"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               >
                 Email
               </label>
@@ -87,14 +87,14 @@ export default function SupportPage() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 className="w-full px-4 py-3 rounded-xl bg-[#0b0b0b] border border-white/10 text-white text-sm focus:border-[#e5a04b]/50 focus:outline-none transition-colors"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 placeholder="your@email.com"
               />
             </div>
             <div>
               <label
                 className="text-gray-400 text-xs mb-1.5 block"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               >
                 Message
               </label>
@@ -104,7 +104,7 @@ export default function SupportPage() {
                 required
                 rows={5}
                 className="w-full px-4 py-3 rounded-xl bg-[#0b0b0b] border border-white/10 text-white text-sm focus:border-[#e5a04b]/50 focus:outline-none transition-colors resize-none"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 placeholder="Tell us how you'd like to help or what you need..."
               />
             </div>
@@ -117,7 +117,7 @@ export default function SupportPage() {
               >
                 <span
                   className="text-[#e5a04b] text-sm"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 >
                   ✓ Message sent! We&apos;ll get back to you soon.
                 </span>
@@ -126,7 +126,7 @@ export default function SupportPage() {
               <motion.button
                 type="submit"
                 className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#b7682c] to-[#8f4e25] text-white text-sm font-semibold shadow-[0_0_25px_rgba(183,104,44,0.4)] hover:shadow-[0_0_40px_rgba(183,104,44,0.6)] transition-all duration-300"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >

@@ -30,12 +30,12 @@ function FlipUnit({ value, label }: { value: number; label: string }) {
           initial={{ opacity: 0.5, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           className="relative text-3xl md:text-4xl font-black text-white"
-          style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+          style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
         >
           {display}
         </motion.span>
       </div>
-      <span className="text-xs text-gray-500 tracking-widest uppercase" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+      <span className="text-xs text-gray-500 tracking-widest uppercase" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
         {label}
       </span>
     </div>
@@ -64,13 +64,13 @@ export default function EventCountdown() {
           transition={{ duration: 0.7 }}
           className="text-center mb-12"
         >
-          <p className="text-xs tracking-[0.4em] text-[#e5a04b] mb-3 uppercase" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+          <p className="text-xs tracking-[0.4em] text-[#e5a04b] mb-3 uppercase" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
             — Next Event —
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-2" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-2" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>
             UPCOMING STARGAZING
           </h2>
-          <p className="text-gray-400 text-sm" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+          <p className="text-gray-400 text-sm" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
             Join us for a night under the stars
           </p>
         </motion.div>
@@ -87,21 +87,21 @@ export default function EventCountdown() {
               <div>
                 <div className="flex items-center gap-2 mb-1">
                   <span className="w-2 h-2 rounded-full bg-[#e5a04b] animate-pulse" />
-                  <span className="text-[#e5a04b] text-xs tracking-widest uppercase" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+                  <span className="text-[#e5a04b] text-xs tracking-widest uppercase" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
                     Live Countdown
                   </span>
                 </div>
-                <h3 className="text-2xl font-bold text-white mt-1" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>
+                <h3 className="text-2xl font-bold text-white mt-1" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>
                   Lyrid Meteor Shower Night
                 </h3>
-                <p className="text-gray-400 text-sm mt-1" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+                <p className="text-gray-400 text-sm mt-1" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
                   Jadavpur University Campus Rooftop Observatory
                 </p>
               </div>
               <div className="text-right">
-                <p className="text-gray-500 text-xs mb-1" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>Event Date</p>
-                <p className="text-white font-semibold" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>APR 12, 2025</p>
-                <p className="text-[#e5a04b] text-sm" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>7:00 PM IST</p>
+                <p className="text-gray-500 text-xs mb-1" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>Event Date</p>
+                <p className="text-white font-semibold" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>APR 12, 2025</p>
+                <p className="text-[#e5a04b] text-sm" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>7:00 PM IST</p>
               </div>
             </div>
 
@@ -118,7 +118,7 @@ export default function EventCountdown() {
             <div className="mt-8 text-center">
               <motion.button
                 className="px-8 py-3 rounded-full bg-gradient-to-r from-[#b7682c]/30 to-[#e5a04b]/20 border border-[#b7682c]/50 text-white text-sm font-medium hover:from-[#b7682c]/50 hover:to-[#e5a04b]/30 hover:shadow-[0_0_30px_rgba(183,104,44,0.4)] transition-all duration-300"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.97 }}
               >

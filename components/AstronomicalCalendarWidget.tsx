@@ -117,7 +117,7 @@ export default function AstronomicalCalendarWidget({ preview = false }: Astronom
       >
         <p
           className="text-xs tracking-[0.3em] text-[#e5a04b] mb-2 uppercase"
-          style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+          style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
         >
           Next Event
         </p>
@@ -125,13 +125,13 @@ export default function AstronomicalCalendarWidget({ preview = false }: Astronom
           <div>
             <h3
               className="text-lg font-bold text-white truncate"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               {nextEvent.title}
             </h3>
             <p
               className="text-sm text-[#e5e7eb]/70 mt-1"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               {formatEventDate(nextEvent.event_date)}
             </p>
@@ -139,7 +139,7 @@ export default function AstronomicalCalendarWidget({ preview = false }: Astronom
               <div className="w-1.5 h-1.5 rounded-full bg-[#c87938] animate-pulse" />
               <span
                 className="text-sm font-semibold text-[#c87938]"
-                style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
               >
                 {getCountdown(nextEvent.event_date)}
               </span>
@@ -148,7 +148,7 @@ export default function AstronomicalCalendarWidget({ preview = false }: Astronom
         ) : (
           <p
             className="text-sm text-[#e5e7eb]/50"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             No astronomical events scheduled.
           </p>
@@ -167,13 +167,13 @@ export default function AstronomicalCalendarWidget({ preview = false }: Astronom
     >
       <p
         className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
-        style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+        style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
       >
         — Astronomical Calendar —
       </p>
       <h2
         className="text-2xl md:text-3xl font-bold text-white mb-8"
-        style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+        style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
       >
         UPCOMING EVENTS
       </h2>
@@ -182,7 +182,7 @@ export default function AstronomicalCalendarWidget({ preview = false }: Astronom
         <div className="rounded-xl border border-white/10 bg-[#0c0c0c]/60 py-16 text-center">
           <p
             className="text-gray-500 text-sm"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             No astronomical events scheduled.
           </p>
@@ -220,20 +220,20 @@ export default function AstronomicalCalendarWidget({ preview = false }: Astronom
                     <div className="min-w-0 flex-1">
                       <h3
                         className="text-base font-bold text-white"
-                        style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                        style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                       >
                         {event.title}
                       </h3>
                       <p
                         className="text-xs text-[#e5a04b] mt-1"
-                        style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                        style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                       >
                         {formatEventDate(event.event_date)}
                       </p>
                       {event.description && (
                         <p
                           className="text-sm text-[#e5e7eb]/60 mt-2 line-clamp-2"
-                          style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                          style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                         >
                           {event.description}
                         </p>
@@ -242,7 +242,7 @@ export default function AstronomicalCalendarWidget({ preview = false }: Astronom
                     <div className="flex-shrink-0 text-right">
                       <span
                         className="inline-block text-xs font-semibold text-[#c87938] bg-[#c87938]/10 border border-[#c87938]/20 rounded-full px-3 py-1"
-                        style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                        style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                       >
                         {getCountdown(event.event_date)}
                       </span>
@@ -271,13 +271,13 @@ export default function AstronomicalCalendarWidget({ preview = false }: Astronom
                 <div className="flex-1 rounded-lg bg-[#050505]/30 border border-[#292522]/50 p-4">
                   <h3
                     className="text-base font-bold text-[#e5e7eb]/50"
-                    style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                    style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                   >
                     {event.title}
                   </h3>
                   <p
                     className="text-xs text-[#e5e7eb]/30 mt-1"
-                    style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                    style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   >
                     {formatEventDate(event.event_date)}
                   </p>

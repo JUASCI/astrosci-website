@@ -50,19 +50,19 @@ export default function GalleryPage() {
           >
             <p
               className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Astrophotography —
             </p>
             <h1
               className="text-3xl md:text-5xl font-bold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               GALLERY
             </h1>
             <p
               className="text-gray-500 text-sm mt-3"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               Stunning shots captured by our members
             </p>
@@ -84,7 +84,7 @@ export default function GalleryPage() {
             <div className="rounded-xl border border-white/10 bg-[#0c0c0c]/60 py-16 text-center">
               <p
                 className="text-gray-500 text-sm"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               >
                 No gallery images yet — check back soon!
               </p>
@@ -132,13 +132,13 @@ export default function GalleryPage() {
                 <div className="p-4">
                   <h3
                     className="text-white font-bold text-sm"
-                    style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                    style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                   >
                     {item.caption}
                   </h3>
                   <p
                     className="text-gray-500 text-xs mt-1"
-                    style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                    style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   >
                     {new Date(item.created_at).toLocaleDateString("en-IN", {
                       year: "numeric",

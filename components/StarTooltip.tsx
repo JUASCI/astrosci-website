@@ -59,14 +59,14 @@ export default function StarTooltip({
             <div>
               <p
                 className="text-white text-sm font-semibold leading-tight"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               >
                 {name || "AstroSci Member"}
               </p>
               <p
                 className="text-xs mt-0.5"
                 style={{
-                  fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif",
+                  fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif",
                   color: getPlanColor(membershipPlan),
                 }}
               >

@@ -94,7 +94,7 @@ export default function MemberProfileCard({
               {/* Name */}
               <h3
                 className="text-center text-white text-lg font-bold"
-                style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
               >
                 {name || "AstroSci Member"}
               </h3>
@@ -104,7 +104,7 @@ export default function MemberProfileCard({
                 <span
                   className="px-3 py-1 rounded-full text-xs font-medium border"
                   style={{
-                    fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif",
+                    fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif",
                     color: getPlanColor(membershipPlan),
                     borderColor: `${getPlanColor(membershipPlan)}40`,
                     backgroundColor: `${getPlanColor(membershipPlan)}10`,
@@ -118,7 +118,7 @@ export default function MemberProfileCard({
               {bio && (
                 <p
                   className="text-gray-400 text-sm text-center mt-4 leading-relaxed"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 >
                   {bio}
                 </p>
@@ -129,7 +129,7 @@ export default function MemberProfileCard({
                 <Link href={`/profile/${userId}`}>
                   <motion.span
                     className="inline-flex px-6 py-2.5 rounded-full text-sm font-medium bg-gradient-to-r from-[#b7682c] to-[#8f4e25] text-white shadow-[0_0_20px_rgba(183,104,44,0.3)] hover:shadow-[0_0_30px_rgba(183,104,44,0.5)] transition-all duration-300 cursor-pointer"
-                    style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                    style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.97 }}
                   >

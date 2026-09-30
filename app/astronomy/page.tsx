@@ -21,19 +21,19 @@ export default function AstronomyPage() {
           >
             <p
               className="text-xs tracking-[0.4em] text-[#e5a04b] mb-3 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Live Data —
             </p>
             <h1
               className="text-3xl md:text-5xl font-bold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               ASTRONOMY TOOLS
             </h1>
             <p
               className="text-[#e5e7eb]/60 mt-4 max-w-lg mx-auto"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               Real-time celestial data, moon phases, and astronomical events — all in one place.
             </p>

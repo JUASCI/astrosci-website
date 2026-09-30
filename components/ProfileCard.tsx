@@ -17,7 +17,7 @@ export default function ProfileCard({
   department,
   phone,
 }: ProfileCardProps) {
-  const fontMono = { fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" };
+  const fontMono = { fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" };
 
   const rows: { label: string; value: string; highlight?: boolean }[] = [
     { label: "Membership Plan", value: plan || "Free", highlight: true },

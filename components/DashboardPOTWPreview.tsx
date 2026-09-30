@@ -55,13 +55,13 @@ export default function DashboardPOTWPreview() {
           <div>
             <p
               className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Featured Shots —
             </p>
             <h2
               className="text-2xl md:text-3xl font-bold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               Picture of the Week
             </h2>
@@ -69,7 +69,7 @@ export default function DashboardPOTWPreview() {
           <Link href="/potw">
             <motion.span
               className="text-xs sm:text-sm text-[#b7682c] border border-[#b7682c]/30 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full hover:bg-[#b7682c]/10 transition-all cursor-pointer whitespace-nowrap"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               whileHover={{ scale: 1.05 }}
             >
               View All →
@@ -94,7 +94,7 @@ export default function DashboardPOTWPreview() {
           <div className="rounded-xl border border-white/10 bg-[#0c0c0c]/60 py-16 text-center">
             <p
               className="text-gray-500 text-sm"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               No featured photos yet — check back soon!
             </p>
@@ -140,7 +140,7 @@ export default function DashboardPOTWPreview() {
                 <div className="absolute top-3 left-3">
                   <span
                     className="px-2 py-1 rounded-full bg-[#e5a04b]/20 border border-[#e5a04b]/40 text-[#e5a04b] text-xs backdrop-blur-sm"
-                    style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                    style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   >
                     ★ POTW
                   </span>
@@ -149,19 +149,19 @@ export default function DashboardPOTWPreview() {
               <div className="p-4">
                 <h3
                   className="text-white font-bold text-sm mb-1"
-                  style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                  style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                 >
                   {item.title}
                 </h3>
                 <p
                   className="text-[#e5a04b] text-xs"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 >
                   📸 {item.photographer}
                 </p>
                 <p
                   className="text-gray-500 text-xs mt-1"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 >
                   {new Date(item.week_date).toLocaleDateString("en-IN", {
                     year: "numeric",

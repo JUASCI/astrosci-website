@@ -28,19 +28,19 @@ export default function MembersPage() {
         >
           <p
             className="text-xs tracking-[0.4em] text-[#e5a04b] mb-3 uppercase"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             — Explore Our Community —
           </p>
           <h1
             className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-white via-[#e5a04b] to-[#b7682c] bg-clip-text text-transparent"
-            style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+            style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
           >
             AstroSci Constellation Map
           </h1>
           <p
             className="text-gray-400 mt-3 text-sm md:text-base max-w-xl mx-auto"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             Each member is a star in our constellation map. Hover over stars
             to discover member identities.
@@ -60,7 +60,7 @@ export default function MembersPage() {
           >
             <p
               className="text-[10px] tracking-[0.3em] text-gray-400 uppercase mb-3"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               Star Legend
             </p>
@@ -76,7 +76,7 @@ export default function MembersPage() {
                   />
                   <span
                     className="text-gray-300 text-xs"
-                    style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                    style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   >
                     {item.label}
                   </span>

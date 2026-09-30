@@ -19,9 +19,9 @@ const config: Config = {
         "aurora-green": "#22c55e",
       },
       fontFamily: {
-        heading: ["Space Grotesk", "Inter", "Helvetica", "sans-serif"],
-        body: ["Public Sans", "Inter", "system-ui", "sans-serif"],
-        mono: ["DM Mono", "JetBrains Mono", "monospace"],
+        heading: ["Barlow Condensed", "Inter", "Helvetica", "sans-serif"],
+        body: ["DM Sans", "Inter", "system-ui", "sans-serif"],
+        mono: ["IBM Plex Mono", "monospace"],
       },
     },
   },

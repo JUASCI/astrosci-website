@@ -30,7 +30,7 @@ body {
   min-width: 320px;
   background: var(--bg-space);
   color: var(--ink);
-  font-family: "Public Sans", "Inter", system-ui, sans-serif;
+  font-family: "DM Sans", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -103,4 +103,25 @@ input:focus, textarea:focus, select:focus, button:focus-visible, a:focus-visible
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* Typography system: condensed observatory headlines, calm reading copy, precise metadata. */
+h1, h2, h3, h4, h5, h6,
+.font-heading {
+  font-family: "Barlow Condensed", "Arial Narrow", sans-serif !important;
+  letter-spacing: -0.025em;
+}
+
+body,
+.font-body,
+button, input, textarea, select {
+  font-family: "DM Sans", system-ui, sans-serif;
+}
+
+.font-mono,
+code, pre,
+[class*="tracking-[0.3em]"],
+[class*="tracking-[0.4em]"],
+[class*="tracking-[0.28em]"] {
+  font-family: "IBM Plex Mono", "Courier New", monospace;
 }

@@ -9,7 +9,7 @@ function MoonWidget() {
     >
       <div className="flex items-center gap-2 mb-5">
         <div className="w-2 h-2 rounded-full bg-[#e5a04b] animate-pulse" />
-        <p className="text-xs text-gray-500 tracking-widest uppercase" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>Live Data</p>
+        <p className="text-xs text-gray-500 tracking-widest uppercase" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>Live Data</p>
       </div>
       <div className="flex flex-col items-center gap-4 mb-5">
         <div className="relative w-24 h-24">
@@ -28,21 +28,21 @@ function MoonWidget() {
           </div>
         </div>
         <div className="text-center">
-          <p className="text-white font-bold text-lg" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>Waxing Gibbous</p>
-          <p className="text-[#e5a04b] text-sm mt-1" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>78% Illuminated</p>
+          <p className="text-white font-bold text-lg" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>Waxing Gibbous</p>
+          <p className="text-[#e5a04b] text-sm mt-1" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>78% Illuminated</p>
         </div>
       </div>
       <div className="grid grid-cols-2 gap-3 pt-4 border-t border-white/5">
         <div>
-          <p className="text-gray-600 text-xs mb-1" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>Moonrise</p>
-          <p className="text-white text-sm font-medium" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>14:32 IST</p>
+          <p className="text-gray-600 text-xs mb-1" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>Moonrise</p>
+          <p className="text-white text-sm font-medium" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>14:32 IST</p>
         </div>
         <div>
-          <p className="text-gray-600 text-xs mb-1" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>Moonset</p>
-          <p className="text-white text-sm font-medium" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>03:18 IST</p>
+          <p className="text-gray-600 text-xs mb-1" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>Moonset</p>
+          <p className="text-white text-sm font-medium" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>03:18 IST</p>
         </div>
       </div>
-      <h3 className="text-center text-lg font-bold text-white mt-4" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>Moon Phase</h3>
+      <h3 className="text-center text-lg font-bold text-white mt-4" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>Moon Phase</h3>
     </motion.div>
   );
 }
@@ -56,7 +56,7 @@ function ISSWidget() {
       <div className="flex items-center gap-2 mb-5">
         <div className="w-2 h-2 rounded-full bg-[#e5a04b] animate-ping absolute" />
         <div className="w-2 h-2 rounded-full bg-[#e5a04b]" />
-        <p className="text-xs text-gray-500 tracking-widest uppercase ml-3" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>Tracking Active</p>
+        <p className="text-xs text-gray-500 tracking-widest uppercase ml-3" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>Tracking Active</p>
       </div>
       <div
         className="w-full h-32 rounded-xl mb-4 relative overflow-hidden border border-[#e5a04b]/10"
@@ -71,27 +71,27 @@ function ISSWidget() {
         />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-16 border border-[#e5a04b]/30 rounded-full" style={{ transform: "translate(-50%, -50%) rotate(-30deg)" }} />
         <div className="absolute top-1/3 left-2/3 w-3 h-3 rounded-full bg-[#e5a04b] shadow-[0_0_10px_#e5a04b]" style={{ animation: "pulse 1.5s ease-in-out infinite" }} />
-        <div className="absolute bottom-2 left-3 text-[#e5a04b]/50 text-[9px]" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>LIVE ORBIT TRACKER</div>
+        <div className="absolute bottom-2 left-3 text-[#e5a04b]/50 text-[9px]" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>LIVE ORBIT TRACKER</div>
       </div>
       <div className="grid grid-cols-2 gap-3 mb-4">
         <div>
-          <p className="text-gray-600 text-xs mb-1" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>Altitude</p>
-          <p className="text-white text-sm font-medium" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>408 km</p>
+          <p className="text-gray-600 text-xs mb-1" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>Altitude</p>
+          <p className="text-white text-sm font-medium" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>408 km</p>
         </div>
         <div>
-          <p className="text-gray-600 text-xs mb-1" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>Speed</p>
-          <p className="text-white text-sm font-medium" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>27,600 km/h</p>
+          <p className="text-gray-600 text-xs mb-1" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>Speed</p>
+          <p className="text-white text-sm font-medium" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>27,600 km/h</p>
         </div>
         <div>
-          <p className="text-gray-600 text-xs mb-1" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>Over</p>
-          <p className="text-[#e5a04b] text-sm font-medium" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>Indian Ocean</p>
+          <p className="text-gray-600 text-xs mb-1" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>Over</p>
+          <p className="text-[#e5a04b] text-sm font-medium" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>Indian Ocean</p>
         </div>
         <div>
-          <p className="text-gray-600 text-xs mb-1" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>Next Pass</p>
-          <p className="text-white text-sm font-medium" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>21:14 IST</p>
+          <p className="text-gray-600 text-xs mb-1" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>Next Pass</p>
+          <p className="text-white text-sm font-medium" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>21:14 IST</p>
         </div>
       </div>
-      <h3 className="text-center text-lg font-bold text-white" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>ISS Tracker</h3>
+      <h3 className="text-center text-lg font-bold text-white" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>ISS Tracker</h3>
     </motion.div>
   );
 }
@@ -104,7 +104,7 @@ function MeteorWidget() {
     >
       <div className="flex items-center gap-2 mb-5">
         <div className="w-2 h-2 rounded-full bg-[#e5a04b]" />
-        <p className="text-xs text-gray-500 tracking-widest uppercase" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>Upcoming Event</p>
+        <p className="text-xs text-gray-500 tracking-widest uppercase" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>Upcoming Event</p>
       </div>
       <div
         className="w-full h-28 rounded-xl mb-4 relative overflow-hidden border border-[#e5a04b]/10 flex items-center justify-center"
@@ -125,20 +125,20 @@ function MeteorWidget() {
         <span className="text-4xl relative z-10">☄️</span>
       </div>
       <div className="text-center mb-4">
-        <p className="text-white font-bold text-xl mb-1" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>ETA AQUARIIDS</p>
-        <p className="text-[#e5a04b] text-sm" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>Peak: May 6, 2025</p>
+        <p className="text-white font-bold text-xl mb-1" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>ETA AQUARIIDS</p>
+        <p className="text-[#e5a04b] text-sm" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>Peak: May 6, 2025</p>
       </div>
       <div className="grid grid-cols-2 gap-3 pt-4 border-t border-white/5">
         <div>
-          <p className="text-gray-600 text-xs mb-1" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>Rate</p>
-          <p className="text-white text-sm font-medium" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>~50/hour</p>
+          <p className="text-gray-600 text-xs mb-1" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>Rate</p>
+          <p className="text-white text-sm font-medium" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>~50/hour</p>
         </div>
         <div>
-          <p className="text-gray-600 text-xs mb-1" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>In</p>
-          <p className="text-[#e5a04b] text-sm font-medium" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>29 days</p>
+          <p className="text-gray-600 text-xs mb-1" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>In</p>
+          <p className="text-[#e5a04b] text-sm font-medium" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>29 days</p>
         </div>
       </div>
-      <h3 className="text-center text-lg font-bold text-white mt-4" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>Meteor Shower</h3>
+      <h3 className="text-center text-lg font-bold text-white mt-4" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>Meteor Shower</h3>
     </motion.div>
   );
 }
@@ -157,13 +157,13 @@ export default function WidgetSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-12"
         >
-          <p className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+          <p className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
             — Observatory Dashboard —
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>
+          <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>
             LIVE ASTRONOMY WIDGETS
           </h2>
-          <p className="text-gray-500 text-sm mt-2" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+          <p className="text-gray-500 text-sm mt-2" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
             Real-time space data for the curious astronomer
           </p>
         </motion.div>

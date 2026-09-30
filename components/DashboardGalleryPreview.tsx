@@ -50,13 +50,13 @@ export default function DashboardGalleryPreview() {
           <div>
             <p
               className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Astrophotography —
             </p>
             <h2
               className="text-2xl md:text-3xl font-bold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               GALLERY
             </h2>
@@ -64,7 +64,7 @@ export default function DashboardGalleryPreview() {
           <Link href="/gallery">
             <motion.span
               className="text-xs sm:text-sm text-[#e5a04b] border border-[#e5a04b]/30 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full hover:bg-[#e5a04b]/10 transition-all cursor-pointer whitespace-nowrap"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               whileHover={{ scale: 1.05 }}
             >
               View All →
@@ -84,7 +84,7 @@ export default function DashboardGalleryPreview() {
           <div className="rounded-xl border border-white/10 bg-[#0c0c0c]/60 py-16 text-center">
             <p
               className="text-gray-500 text-sm"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               No gallery images yet — check back soon!
             </p>
@@ -131,7 +131,7 @@ export default function DashboardGalleryPreview() {
               <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <p
                   className="text-white text-sm font-bold"
-                  style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                  style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                 >
                   {item.caption}
                 </p>

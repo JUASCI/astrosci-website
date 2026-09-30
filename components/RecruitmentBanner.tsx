@@ -75,7 +75,7 @@ export default function RecruitmentBanner() {
               background: "linear-gradient(135deg,#8f4e2520,#e5a04b20)",
               border: "1px solid #b7682c40",
               color: "#f2b866",
-              fontFamily: "'Space Grotesk','Inter',sans-serif",
+              fontFamily: "'Barlow Condensed','Inter',sans-serif",
               letterSpacing: "2px",
             }}
           >
@@ -89,7 +89,7 @@ export default function RecruitmentBanner() {
           <h2
             className="text-2xl md:text-3xl font-black mb-2 leading-tight"
             style={{
-              fontFamily: "'Space Grotesk','Inter',sans-serif",
+              fontFamily: "'Barlow Condensed','Inter',sans-serif",
               background: "linear-gradient(135deg,#fff 20%,#f6d39a 50%,#e5a04b 80%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
@@ -99,7 +99,7 @@ export default function RecruitmentBanner() {
             Join Astro Club 2025–26
           </h2>
 
-          <p className="text-sm text-gray-400 mb-4" style={{ fontFamily: "'Public Sans','Inter',sans-serif" }}>
+          <p className="text-sm text-gray-400 mb-4" style={{ fontFamily: "'DM Sans','Inter',sans-serif" }}>
             PR · Design · Tech · Video · Content — applications close&nbsp;
             <span className="text-yellow-400 font-semibold">June 6 · 5:00 PM IST</span>
           </p>
@@ -110,7 +110,7 @@ export default function RecruitmentBanner() {
               style={{
                 background: "linear-gradient(135deg,#8f4e25,#b7682c,#e5a04b)",
                 boxShadow: "0 0 20px #b7682c50",
-                fontFamily: "'Space Grotesk','Inter',sans-serif",
+                fontFamily: "'Barlow Condensed','Inter',sans-serif",
               }}
             >
               Apply Now 🚀
@@ -137,13 +137,13 @@ export default function RecruitmentBanner() {
               >
                 <span
                   className="text-xl md:text-2xl font-black leading-none"
-                  style={{ fontFamily: "'Space Grotesk','Inter',sans-serif", color: b.color }}
+                  style={{ fontFamily: "'Barlow Condensed','Inter',sans-serif", color: b.color }}
                 >
                   {pad(b.val)}
                 </span>
                 <span
                   className="text-[9px] mt-1"
-                  style={{ fontFamily: "'Space Grotesk','Inter',sans-serif", color: "#8d8175", letterSpacing: "2px" }}
+                  style={{ fontFamily: "'Barlow Condensed','Inter',sans-serif", color: "#8d8175", letterSpacing: "2px" }}
                 >
                   {b.lbl}
                 </span>

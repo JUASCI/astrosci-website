@@ -31,13 +31,13 @@ export default function FeedbackForm() {
         >
           <p
             className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             — We Value Your Input —
           </p>
           <h2
             className="text-2xl md:text-3xl font-bold text-white"
-            style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+            style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
           >
             FEEDBACK
           </h2>
@@ -54,7 +54,7 @@ export default function FeedbackForm() {
           <div>
             <label
               className="text-gray-400 text-xs mb-1 block"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               Name
             </label>
@@ -64,14 +64,14 @@ export default function FeedbackForm() {
               onChange={(e) => setName(e.target.value)}
               required
               className="w-full px-4 py-3 rounded-xl bg-[#0b0b0b] border border-white/10 text-white text-sm focus:border-[#e5a04b]/50 focus:outline-none transition-colors"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               placeholder="Your name"
             />
           </div>
           <div>
             <label
               className="text-gray-400 text-xs mb-1 block"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               Email
             </label>
@@ -81,14 +81,14 @@ export default function FeedbackForm() {
               onChange={(e) => setEmail(e.target.value)}
               required
               className="w-full px-4 py-3 rounded-xl bg-[#0b0b0b] border border-white/10 text-white text-sm focus:border-[#e5a04b]/50 focus:outline-none transition-colors"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               placeholder="your@email.com"
             />
           </div>
           <div>
             <label
               className="text-gray-400 text-xs mb-1 block"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               Feedback
             </label>
@@ -98,7 +98,7 @@ export default function FeedbackForm() {
               required
               rows={4}
               className="w-full px-4 py-3 rounded-xl bg-[#0b0b0b] border border-white/10 text-white text-sm focus:border-[#e5a04b]/50 focus:outline-none transition-colors resize-none"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               placeholder="Share your thoughts..."
             />
           </div>
@@ -111,7 +111,7 @@ export default function FeedbackForm() {
             >
               <span
                 className="text-[#e5a04b] text-sm"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               >
                 ✓ Thank you for your feedback!
               </span>
@@ -120,7 +120,7 @@ export default function FeedbackForm() {
             <motion.button
               type="submit"
               className="w-full py-3 rounded-xl bg-gradient-to-r from-[#e5a04b]/20 to-[#b7682c]/20 border border-[#e5a04b]/40 text-[#e5a04b] text-sm font-medium hover:from-[#e5a04b]/30 hover:to-[#b7682c]/30 hover:shadow-[0_0_30px_rgba(229,160,75,0.3)] transition-all duration-300"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >

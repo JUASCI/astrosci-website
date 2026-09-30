@@ -114,19 +114,19 @@ export default function TeamPage() {
           >
             <p
               className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Meet the Team —
             </p>
             <h1
               className="text-3xl md:text-5xl font-bold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               {siteConfig.clubName} Team
             </h1>
             <p
               className="text-gray-500 text-sm mt-3"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               The people behind the telescope
             </p>
@@ -152,7 +152,7 @@ export default function TeamPage() {
                 <div key={group.level}>
                   <h2
                     className="text-lg font-semibold text-[#e5a04b] mb-6 text-center tracking-wide uppercase"
-                    style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                    style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                   >
                     {group.label}
                   </h2>
@@ -183,14 +183,14 @@ export default function TeamPage() {
                         </div>
                         <h3
                           className="text-white font-bold text-base mb-1"
-                          style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                          style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                         >
                           {member.name || "Team Member"}
                         </h3>
                         {member.designation && (
                           <p
                             className="text-[#e5a04b] text-sm mb-1"
-                            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                           >
                             {member.designation}
                           </p>
@@ -198,7 +198,7 @@ export default function TeamPage() {
                         {member.department && (
                           <p
                             className="text-gray-500 text-xs"
-                            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                           >
                             {member.department}
                           </p>
@@ -206,7 +206,7 @@ export default function TeamPage() {
                         {member.phone && (
                           <p
                             className="text-gray-400 text-xs mt-2 flex items-center justify-center gap-1"
-                            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                           >
                             <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-current text-[#c87938]">
                               <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />

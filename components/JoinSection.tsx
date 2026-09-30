@@ -16,14 +16,14 @@ export default function JoinSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-xs tracking-[0.4em] text-[#e5a04b] mb-4 uppercase" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+          <p className="text-xs tracking-[0.4em] text-[#e5a04b] mb-4 uppercase" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
             — Join Us —
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>
             Become part of the<br />
             <span className="bg-gradient-to-r from-[#b7682c] to-[#c87938] bg-clip-text text-transparent">AstroSci community</span>
           </h2>
-          <p className="text-gray-400 text-base md:text-lg max-w-xl mx-auto mb-10 leading-relaxed" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+          <p className="text-gray-400 text-base md:text-lg max-w-xl mx-auto mb-10 leading-relaxed" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
             Join a passionate group of astronomers, astrophotographers, and space enthusiasts.
             Attend stargazing events, contribute to our magazine, and explore the universe with us.
           </p>
@@ -38,7 +38,7 @@ export default function JoinSection() {
           <Link href="/auth?tab=signup">
             <motion.span
               className="inline-flex px-10 py-4 rounded-full bg-gradient-to-r from-[#b7682c] to-[#8f4e25] text-white font-semibold text-sm tracking-wider shadow-[0_0_30px_rgba(183,104,44,0.4)] hover:shadow-[0_0_50px_rgba(183,104,44,0.7)] transition-all duration-300 cursor-pointer"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
             >

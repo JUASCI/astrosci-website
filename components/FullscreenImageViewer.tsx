@@ -91,7 +91,7 @@ export default function FullscreenImageViewer({
                   <p
                     className="text-white text-sm md:text-base font-bold"
                     style={{
-                      fontFamily: "'Space Grotesk', 'Inter', sans-serif",
+                      fontFamily: "'Barlow Condensed', 'Inter', sans-serif",
                     }}
                   >
                     {caption}
@@ -102,7 +102,7 @@ export default function FullscreenImageViewer({
                     className="text-gray-400 text-xs md:text-sm mt-1"
                     style={{
                       fontFamily:
-                        "'Public Sans', 'Inter', system-ui, sans-serif",
+                        "'DM Sans', 'Inter', system-ui, sans-serif",
                     }}
                   >
                     {subCaption}
@@ -117,7 +117,7 @@ export default function FullscreenImageViewer({
             <p
               className="text-gray-500 text-xs"
               style={{
-                fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif",
+                fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif",
               }}
             >
               Press ESC or tap outside to close

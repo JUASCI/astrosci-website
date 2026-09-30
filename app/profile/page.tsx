@@ -105,13 +105,13 @@ export default function ProfilePage() {
           >
             <p
               className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — {greeting} —
             </p>
             <h1
               className="text-3xl md:text-4xl font-bold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               Hello, {userName || "AstroSci Member"}
             </h1>
@@ -134,13 +134,13 @@ export default function ProfilePage() {
             <div className="flex flex-col items-center mb-8 -mt-4">
               <h2
                 className="text-xl font-bold text-white mt-2"
-                style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
               >
                 {userName || "AstroSci Member"}
               </h2>
               <p
                 className="text-gray-400 text-sm mt-1"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               >
                 {userEmail || "Not logged in"}
               </p>
@@ -152,7 +152,7 @@ export default function ProfilePage() {
                 <motion.button
                   onClick={() => setEditing(true)}
                   className="flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium border border-[#b7682c]/60 text-[#e5a04b] hover:bg-[#b7682c]/20 hover:border-[#b7682c] transition-all duration-300"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.97 }}
                 >
@@ -199,7 +199,7 @@ export default function ProfilePage() {
               <motion.button
                 onClick={handleLogout}
                 className="flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-medium border border-red-500/40 text-red-400 hover:bg-red-500/10 hover:border-red-500/60 transition-all duration-300"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.97 }}
               >

@@ -21,13 +21,13 @@ export default function AstronomyPreview() {
           <div>
             <p
               className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Astronomy Tools —
             </p>
             <h2
               className="text-2xl md:text-3xl font-bold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               LIVE SKY DATA
             </h2>
@@ -35,7 +35,7 @@ export default function AstronomyPreview() {
           <Link href="/astronomy">
             <motion.span
               className="text-xs sm:text-sm text-[#e5a04b] border border-[#e5a04b]/30 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full hover:bg-[#e5a04b]/10 transition-all cursor-pointer whitespace-nowrap"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               whileHover={{ scale: 1.05 }}
             >
               Explore Astronomy Tools →

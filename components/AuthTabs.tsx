@@ -24,7 +24,7 @@ export default function AuthTabs({ activeTab, onTabChange }: AuthTabsProps) {
         className={`relative z-10 flex-1 py-2.5 text-sm font-semibold rounded-lg transition-colors duration-200 ${
           activeTab === "login" ? "text-white" : "text-gray-400 hover:text-gray-300"
         }`}
-        style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+        style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
         onClick={() => onTabChange("login")}
       >
         Login
@@ -33,7 +33,7 @@ export default function AuthTabs({ activeTab, onTabChange }: AuthTabsProps) {
         className={`relative z-10 flex-1 py-2.5 text-sm font-semibold rounded-lg transition-colors duration-200 ${
           activeTab === "signup" ? "text-white" : "text-gray-400 hover:text-gray-300"
         }`}
-        style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+        style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
         onClick={() => onTabChange("signup")}
       >
         Sign Up

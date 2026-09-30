@@ -163,16 +163,16 @@ function ISSMap({ latitude, longitude }: { latitude: number; longitude: number }
       </motion.div>
 
       {/* Coordinate labels */}
-      <div className="absolute bottom-2 left-2 text-[10px] text-[#e5e7eb]/40" style={{ fontFamily: "'DM Mono', monospace" }}>
+      <div className="absolute bottom-2 left-2 text-[10px] text-[#e5e7eb]/40" style={{ fontFamily: "'IBM Plex Mono', monospace" }}>
         90°S
       </div>
-      <div className="absolute top-2 left-2 text-[10px] text-[#e5e7eb]/40" style={{ fontFamily: "'DM Mono', monospace" }}>
+      <div className="absolute top-2 left-2 text-[10px] text-[#e5e7eb]/40" style={{ fontFamily: "'IBM Plex Mono', monospace" }}>
         90°N
       </div>
-      <div className="absolute bottom-2 right-2 text-[10px] text-[#e5e7eb]/40" style={{ fontFamily: "'DM Mono', monospace" }}>
+      <div className="absolute bottom-2 right-2 text-[10px] text-[#e5e7eb]/40" style={{ fontFamily: "'IBM Plex Mono', monospace" }}>
         180°E
       </div>
-      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-[10px] text-[#e5e7eb]/40" style={{ fontFamily: "'DM Mono', monospace" }}>
+      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-[10px] text-[#e5e7eb]/40" style={{ fontFamily: "'IBM Plex Mono', monospace" }}>
         0°
       </div>
     </div>
@@ -216,13 +216,13 @@ export default function ISSTrackerWidget({ preview = false }: ISSTrackerWidgetPr
       <div className={`rounded-xl border border-[#292522] bg-[#121212] ${preview ? "p-4" : "p-6"}`}>
         <p
           className="text-xs tracking-[0.3em] text-[#e5a04b] mb-1 uppercase"
-          style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+          style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
         >
           ISS Tracker
         </p>
         <p
           className="text-sm text-[#e5e7eb]/50"
-          style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+          style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
         >
           Unable to fetch ISS position. Retrying…
         </p>
@@ -260,19 +260,19 @@ export default function ISSTrackerWidget({ preview = false }: ISSTrackerWidgetPr
           <div className="flex-1 min-w-0">
             <p
               className="text-xs tracking-[0.3em] text-[#e5a04b] mb-1 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               ISS Location
             </p>
             <p
               className="text-sm font-semibold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               {formatCoord(position.latitude, "N", "S")}
             </p>
             <p
               className="text-sm text-[#e5e7eb]/70"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               {formatCoord(position.longitude, "E", "W")}
             </p>
@@ -294,13 +294,13 @@ export default function ISSTrackerWidget({ preview = false }: ISSTrackerWidgetPr
         <div>
           <p
             className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             — International Space Station —
           </p>
           <h2
             className="text-2xl md:text-3xl font-bold text-white"
-            style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+            style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
           >
             ISS TRACKER
           </h2>
@@ -313,7 +313,7 @@ export default function ISSTrackerWidget({ preview = false }: ISSTrackerWidgetPr
           />
           <span
             className="text-xs text-[#c87938]"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             LIVE
           </span>
@@ -326,13 +326,13 @@ export default function ISSTrackerWidget({ preview = false }: ISSTrackerWidgetPr
         <div className="rounded-lg bg-[#050505]/60 border border-[#292522] p-4">
           <p
             className="text-xs text-[#e5e7eb]/50 uppercase tracking-wider mb-1"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             Latitude
           </p>
           <p
             className="text-lg font-bold text-white"
-            style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+            style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
           >
             {formatCoord(position.latitude, "N", "S")}
           </p>
@@ -340,13 +340,13 @@ export default function ISSTrackerWidget({ preview = false }: ISSTrackerWidgetPr
         <div className="rounded-lg bg-[#050505]/60 border border-[#292522] p-4">
           <p
             className="text-xs text-[#e5e7eb]/50 uppercase tracking-wider mb-1"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             Longitude
           </p>
           <p
             className="text-lg font-bold text-white"
-            style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+            style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
           >
             {formatCoord(position.longitude, "E", "W")}
           </p>
@@ -354,13 +354,13 @@ export default function ISSTrackerWidget({ preview = false }: ISSTrackerWidgetPr
         <div className="rounded-lg bg-[#050505]/60 border border-[#292522] p-4">
           <p
             className="text-xs text-[#e5e7eb]/50 uppercase tracking-wider mb-1"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             Altitude
           </p>
           <p
             className="text-lg font-bold text-white"
-            style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+            style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
           >
             {position.altitude.toFixed(1)} km
           </p>
@@ -368,13 +368,13 @@ export default function ISSTrackerWidget({ preview = false }: ISSTrackerWidgetPr
         <div className="rounded-lg bg-[#050505]/60 border border-[#292522] p-4">
           <p
             className="text-xs text-[#e5e7eb]/50 uppercase tracking-wider mb-1"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             Velocity
           </p>
           <p
             className="text-lg font-bold text-white"
-            style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+            style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
           >
             {position.velocity.toFixed(0)} km/h
           </p>
@@ -384,7 +384,7 @@ export default function ISSTrackerWidget({ preview = false }: ISSTrackerWidgetPr
       {error && (
         <p
           className="text-xs text-yellow-500/70 mt-4 text-center"
-          style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+          style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
         >
           Connection issue — showing last known position
         </p>

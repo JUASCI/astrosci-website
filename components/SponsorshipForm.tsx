@@ -246,7 +246,7 @@ export default function SponsorshipForm() {
                   <h2
                     className="text-xl font-bold text-white"
                     style={{
-                      fontFamily: "'Space Grotesk', 'Inter', sans-serif",
+                      fontFamily: "'Barlow Condensed', 'Inter', sans-serif",
                     }}
                   >
                     Become a Sponsor
@@ -467,7 +467,7 @@ export default function SponsorshipForm() {
                   type="submit"
                   className="w-full py-4 rounded-full bg-gradient-to-r from-[#e5a04b] to-[#d97706] text-black font-bold text-sm tracking-wider shadow-[0_0_30px_rgba(245,158,11,0.3)] hover:shadow-[0_0_50px_rgba(245,158,11,0.5)] transition-all duration-300"
                   style={{
-                    fontFamily: "'Space Grotesk', 'Inter', sans-serif",
+                    fontFamily: "'Barlow Condensed', 'Inter', sans-serif",
                   }}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
@@ -495,7 +495,7 @@ export default function SponsorshipForm() {
               <h2
                 className="text-xl font-bold text-white mb-2"
                 style={{
-                  fontFamily: "'Space Grotesk', 'Inter', sans-serif",
+                  fontFamily: "'Barlow Condensed', 'Inter', sans-serif",
                 }}
               >
                 Complete Payment
@@ -634,7 +634,7 @@ export default function SponsorshipForm() {
                   disabled={submitting}
                   className="w-full py-4 rounded-full bg-gradient-to-r from-[#e5a04b] to-[#d97706] text-black font-bold text-sm tracking-wider shadow-[0_0_30px_rgba(245,158,11,0.3)] hover:shadow-[0_0_50px_rgba(245,158,11,0.5)] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                   style={{
-                    fontFamily: "'Space Grotesk', 'Inter', sans-serif",
+                    fontFamily: "'Barlow Condensed', 'Inter', sans-serif",
                   }}
                   whileHover={submitting ? {} : { scale: 1.02 }}
                   whileTap={submitting ? {} : { scale: 0.98 }}
@@ -678,7 +678,7 @@ export default function SponsorshipForm() {
               <h2
                 className="text-2xl font-bold text-white mb-3"
                 style={{
-                  fontFamily: "'Space Grotesk', 'Inter', sans-serif",
+                  fontFamily: "'Barlow Condensed', 'Inter', sans-serif",
                 }}
               >
                 Payment Verification Pending
@@ -732,7 +732,7 @@ export default function SponsorshipForm() {
                 <h3
                   className="text-base font-bold text-white mb-4"
                   style={{
-                    fontFamily: "'Space Grotesk', 'Inter', sans-serif",
+                    fontFamily: "'Barlow Condensed', 'Inter', sans-serif",
                   }}
                 >
                   Certificate Status

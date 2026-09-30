@@ -63,7 +63,7 @@ export default function LoginSuccessAnimation() {
       {/* Success text */}
       <motion.p
         className="text-white text-lg font-semibold mb-2"
-        style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+        style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7, duration: 0.4 }}
@@ -72,7 +72,7 @@ export default function LoginSuccessAnimation() {
       </motion.p>
       <motion.p
         className="text-gray-400 text-sm"
-        style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+        style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.9, duration: 0.4 }}

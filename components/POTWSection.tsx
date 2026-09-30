@@ -16,13 +16,13 @@ export default function POTWSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-14"
         >
-          <p className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+          <p className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
             — Photo of the Week —
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>
+          <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>
             POTW
           </h2>
-          <p className="text-gray-500 text-sm mt-2" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+          <p className="text-gray-500 text-sm mt-2" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
             Featured astrophotography from our community
           </p>
         </motion.div>
@@ -67,7 +67,7 @@ export default function POTWSection() {
               {/* POTW badge */}
               <div className="absolute top-4 left-4">
                 <div className="px-3 py-1.5 rounded-full bg-[#e5a04b]/20 border border-[#e5a04b]/40 backdrop-blur-sm">
-                  <span className="text-[#e5a04b] text-xs font-bold tracking-widest" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+                  <span className="text-[#e5a04b] text-xs font-bold tracking-widest" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
                     ★ POTW
                   </span>
                 </div>
@@ -78,23 +78,23 @@ export default function POTWSection() {
             <div className="p-6 md:p-8">
               <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4">
                 <div>
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-1" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-1" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>
                     The Carina Nebula
                   </h3>
-                  <p className="text-[#e5a04b] text-sm" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+                  <p className="text-[#e5a04b] text-sm" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
                     📸 Photographed by Anika Mukherjee
                   </p>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="px-3 py-1 rounded-full bg-[#b7682c]/15 border border-[#b7682c]/30 text-[#a78bfa] text-xs" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+                  <span className="px-3 py-1 rounded-full bg-[#b7682c]/15 border border-[#b7682c]/30 text-[#a78bfa] text-xs" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
                     Nebula
                   </span>
-                  <span className="px-3 py-1 rounded-full bg-[#e5a04b]/15 border border-[#e5a04b]/30 text-[#e5a04b] text-xs" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+                  <span className="px-3 py-1 rounded-full bg-[#e5a04b]/15 border border-[#e5a04b]/30 text-[#e5a04b] text-xs" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
                     Deep Sky
                   </span>
                 </div>
               </div>
-              <p className="text-gray-400 text-sm leading-relaxed mb-6" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+              <p className="text-gray-400 text-sm leading-relaxed mb-6" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
                 A breathtaking capture of the Carina Nebula, one of the largest and brightest nebulae in the sky.
                 Shot from the JU campus observatory using a 10-inch Dobsonian telescope with a DSLR adapter.
                 This image was created by stacking 120 frames during a clear moonless night.
@@ -103,7 +103,7 @@ export default function POTWSection() {
                 <motion.a
                   href="#gallery"
                   className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-[#e5a04b]/20 to-[#b7682c]/20 border border-[#e5a04b]/40 text-[#e5a04b] text-sm font-medium hover:from-[#e5a04b]/30 hover:to-[#b7682c]/30 hover:shadow-[0_0_30px_rgba(229,160,75,0.3)] transition-all duration-300"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   whileHover={{ scale: 1.04 }}
                   whileTap={{ scale: 0.97 }}
                 >

@@ -52,19 +52,19 @@ export default function ProjectsPage() {
           >
             <p
               className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Innovation —
             </p>
             <h1
               className="text-3xl md:text-5xl font-bold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               AstroSci Projects
             </h1>
             <p
               className="text-gray-500 text-sm mt-3"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               Research and technical projects by our members
             </p>
@@ -90,7 +90,7 @@ export default function ProjectsPage() {
             <div className="rounded-xl border border-white/10 bg-[#0c0c0c]/60 py-16 text-center">
               <p
                 className="text-gray-500 text-sm"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               >
                 No projects yet — check back soon!
               </p>
@@ -134,14 +134,14 @@ export default function ProjectsPage() {
                 <div className="p-6">
                   <h3
                     className="text-white font-bold text-lg mb-2"
-                    style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                    style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                   >
                     {project.title}
                   </h3>
                   {project.description && (
                     <p
                       className="text-gray-500 text-sm mb-3"
-                      style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                      style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                     >
                       {project.description}
                     </p>
@@ -151,14 +151,14 @@ export default function ProjectsPage() {
                       {project.author && (
                         <span
                           className="text-xs text-gray-400"
-                          style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                          style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                         >
                           by {project.author}
                         </span>
                       )}
                       <span
                         className="text-xs text-gray-600"
-                        style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                        style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                       >
                         {new Date(project.created_at).toLocaleDateString("en-IN", {
                           year: "numeric",
@@ -173,7 +173,7 @@ export default function ProjectsPage() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border border-[#b7682c]/40 text-[#e5a04b] bg-[#b7682c]/10 hover:bg-[#b7682c]/20 hover:border-[#b7682c] transition-all"
-                        style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                        style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                       >
                         <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-current">
                           <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm-1 2l5 5h-5V4zm-3 12v-2h4v2h-4zm6-4H8v-2h8v2z" />

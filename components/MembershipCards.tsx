@@ -67,13 +67,13 @@ export default function MembershipCards() {
         >
           <p
             className="text-xs tracking-[0.4em] text-[#b7682c] mb-2 uppercase"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             — Plans —
           </p>
           <h2
             className="text-2xl md:text-3xl font-bold text-white"
-            style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+            style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
           >
             Membership
           </h2>
@@ -113,7 +113,7 @@ export default function MembershipCards() {
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                     <span
                       className={`px-3 py-1 rounded-full text-xs font-bold ${tierStyles.badge}`}
-                      style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                      style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                     >
                       Best Value
                     </span>
@@ -124,7 +124,7 @@ export default function MembershipCards() {
                   <div className="absolute top-4 right-4">
                     <span
                       className="px-2 py-1 rounded-full bg-[#e5a04b]/20 border border-[#e5a04b]/40 text-[#e5a04b] text-xs"
-                      style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                      style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                     >
                       Active
                     </span>
@@ -142,13 +142,13 @@ export default function MembershipCards() {
 
                 <h3
                   className="text-lg font-bold text-white mb-1"
-                  style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                  style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                 >
                   {plan.name}
                 </h3>
                 <p
                   className="text-gray-500 text-xs mb-4"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 >
                   {plan.description}
                 </p>
@@ -159,7 +159,7 @@ export default function MembershipCards() {
                       <span style={{ color: plan.color }}>✓</span>
                       <span
                         className="text-gray-400 text-xs"
-                        style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                        style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                       >
                         {feature}
                       </span>
@@ -171,7 +171,7 @@ export default function MembershipCards() {
                   href={`mailto:${siteConfig.email}`}
                   className="block w-full py-2.5 rounded-xl text-center text-sm font-medium transition-all duration-300"
                   style={{
-                    fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif",
+                    fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif",
                     background: `${plan.color}15`,
                     border: `1px solid ${plan.color}40`,
                     color: plan.color,
@@ -197,7 +197,7 @@ export default function MembershipCards() {
           <Link href="/support">
             <motion.span
               className="px-5 sm:px-6 py-3 rounded-full border border-[#e5a04b]/30 text-[#e5a04b] text-xs sm:text-sm hover:bg-[#e5a04b]/10 transition-all cursor-pointer whitespace-nowrap"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               whileHover={{ scale: 1.05 }}
             >
               Join as Sponsor
@@ -206,7 +206,7 @@ export default function MembershipCards() {
           <Link href="/support">
             <motion.span
               className="px-5 sm:px-6 py-3 rounded-full bg-gradient-to-r from-[#FBBF24] to-[#F59E0B] text-white text-xs sm:text-sm shadow-[0_0_24px_rgba(183,104,44,0.28)] hover:shadow-[0_0_36px_rgba(183,104,44,0.42)] transition-all cursor-pointer whitespace-nowrap"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               animate={{
                 boxShadow: [
                   "0 0 18px rgba(139,92,246,0.22)",

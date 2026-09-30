@@ -24,16 +24,16 @@ export default function GalleryPreview() {
           className="flex flex-col md:flex-row items-start justify-between mb-12 gap-4"
         >
           <div>
-            <p className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+            <p className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
               — Astrophotography —
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>GALLERY PREVIEW</h2>
-            <p className="text-gray-500 text-sm mt-2" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>Shot by our members, from our campus</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>GALLERY PREVIEW</h2>
+            <p className="text-gray-500 text-sm mt-2" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>Shot by our members, from our campus</p>
           </div>
           <motion.a
             href="#gallery"
             className="text-sm text-[#e5a04b] border-b border-[#e5a04b]/40 hover:border-[#e5a04b] transition-colors pb-1 whitespace-nowrap"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             whileHover={{ x: 4 }}
           >
             Open Full Gallery →
@@ -77,12 +77,12 @@ export default function GalleryPreview() {
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <div className="flex items-end justify-between">
                     <div>
-                      <p className="text-white font-bold text-sm" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>{item.title}</p>
-                      <p className="text-gray-400 text-xs mt-0.5" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>by {item.photographer}</p>
+                      <p className="text-white font-bold text-sm" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>{item.title}</p>
+                      <p className="text-gray-400 text-xs mt-0.5" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>by {item.photographer}</p>
                     </div>
                     <span
                       className="text-xs px-2 py-0.5 rounded-full border"
-                      style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif", color: item.glow, borderColor: `${item.glow}40`, background: `${item.glow}15` }}
+                      style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif", color: item.glow, borderColor: `${item.glow}40`, background: `${item.glow}15` }}
                     >
                       {item.tag}
                     </span>
@@ -94,7 +94,7 @@ export default function GalleryPreview() {
               <div className="absolute top-3 right-3 opacity-100 group-hover:opacity-0 transition-opacity">
                 <span
                   className="text-xs px-2 py-0.5 rounded-full border bg-black/40 backdrop-blur-sm"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif", color: item.glow, borderColor: `${item.glow}30` }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif", color: item.glow, borderColor: `${item.glow}30` }}
                 >
                   {item.tag}
                 </span>
@@ -112,7 +112,7 @@ export default function GalleryPreview() {
         >
           <motion.button
             className="px-6 py-3 sm:px-10 sm:py-4 rounded-full border border-[#e5a04b]/30 text-[#e5a04b] text-xs sm:text-sm font-medium hover:bg-[#e5a04b]/10 hover:border-[#e5a04b]/60 hover:shadow-[0_0_30px_rgba(229,160,75,0.2)] transition-all duration-300"
-            style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+            style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
           >

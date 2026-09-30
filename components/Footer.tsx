@@ -57,17 +57,17 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-5">
               <Image src={siteConfig.assets.logo} alt={`${siteConfig.clubName} Logo`} width={36} height={36} className="h-9 w-9" />
               <div>
-                <span className="font-bold text-lg text-white" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>{siteConfig.clubName.toUpperCase()}</span>
-                <p className="text-gray-500 text-xs" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>{siteConfig.university}</p>
+                <span className="font-bold text-lg text-white" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>{siteConfig.clubName.toUpperCase()}</span>
+                <p className="text-gray-500 text-xs" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>{siteConfig.university}</p>
               </div>
             </div>
-            <p className="text-gray-500 text-sm leading-relaxed mb-6 max-w-xs" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+            <p className="text-gray-500 text-sm leading-relaxed mb-6 max-w-xs" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
               A student-led astronomy club dedicated to exploring the universe, fostering scientific curiosity, and building a community of stargazers.
             </p>
             <a
               href={`mailto:${siteConfig.email}`}
               className="flex items-center gap-2 text-[#e5a04b] text-sm hover:text-white transition-colors"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
                 <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
@@ -98,13 +98,13 @@ export default function Footer() {
           {/* Links */}
           {Object.entries(footerLinks).map(([section, links]) => (
             <div key={section}>
-              <h4 className="text-white font-bold text-sm mb-4 tracking-widest uppercase" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>
+              <h4 className="text-white font-bold text-sm mb-4 tracking-widest uppercase" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>
                 {section}
               </h4>
               <ul className="space-y-2.5">
                 {links.map((link) => (
                   <li key={link}>
-                    <a href="#" className="text-gray-500 text-sm hover:text-[#e5a04b] transition-colors" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+                    <a href="#" className="text-gray-500 text-sm hover:text-[#e5a04b] transition-colors" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
                       {link}
                     </a>
                   </li>
@@ -115,12 +115,12 @@ export default function Footer() {
         </div>
 
         <div className="pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-gray-600 text-xs" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+          <p className="text-gray-600 text-xs" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
             © 2025 AstroSci Club, Jadavpur University. All rights reserved.
           </p>
           <div className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-[#e5a04b] animate-pulse" />
-            <span className="text-gray-600 text-xs" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>Made with ♥ and stardust at JU</span>
+            <span className="text-gray-600 text-xs" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>Made with ♥ and stardust at JU</span>
           </div>
         </div>
       </div>

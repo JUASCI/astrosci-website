@@ -56,7 +56,7 @@ function DonorCard({
         </div>
         <h3
           className="text-base font-bold text-white mb-1"
-          style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+          style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
         >
           {isAnonymous ? "Anonymous Donor" : donor.name}
         </h3>
@@ -88,7 +88,7 @@ export default function DonatorsPageContent({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               className="flex items-center justify-center gap-2 rounded-xl border border-[#f2b866]/30 bg-[#121212]/90 backdrop-blur-sm px-5 py-3 text-sm text-[#f2b866] hover:bg-[#121212] hover:border-[#f2b866]/60 transition-all duration-300 cursor-pointer"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               <Heart className="w-4 h-4" />
               Already applied for donation? Check your status here!
@@ -110,13 +110,13 @@ export default function DonatorsPageContent({
           >
             <p
               className="text-xs tracking-[0.4em] text-[#f2b866] mb-4 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Donations —
             </p>
             <h1
               className="text-4xl md:text-6xl font-bold mb-6"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               <span className="bg-gradient-to-b from-white via-white to-gray-400 bg-clip-text text-transparent">
                 Support{" "}
@@ -127,7 +127,7 @@ export default function DonatorsPageContent({
             </h1>
             <p
               className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               Your contribution helps us promote science and education. Every donation brings us closer to inspiring the next generation of explorers.
             </p>
@@ -141,7 +141,7 @@ export default function DonatorsPageContent({
             <Link href="/donators/payment">
               <motion.span
                 className="inline-flex items-center gap-3 px-12 py-5 rounded-full bg-gradient-to-r from-[#FBBF24] to-[#F59E0B] text-white font-bold text-base tracking-wider shadow-[0_0_26px_rgba(139,92,246,0.32)] hover:shadow-[0_0_42px_rgba(139,92,246,0.5)] transition-all duration-300 cursor-pointer"
-                style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                 animate={{
                   boxShadow: [
                     "0 0 18px rgba(139,92,246,0.28)",
@@ -173,13 +173,13 @@ export default function DonatorsPageContent({
           >
             <p
               className="text-xs tracking-[0.4em] text-[#f2b866] mb-3 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Top Supporters —
             </p>
             <h2
               className="text-3xl md:text-4xl font-bold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               Our Top Donors
             </h2>
@@ -201,7 +201,7 @@ export default function DonatorsPageContent({
               <Star className="w-10 h-10 text-gray-500 mx-auto mb-3" />
               <p
                 className="text-gray-300 text-base"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               >
                 Top supporters will be featured here.
               </p>
@@ -221,13 +221,13 @@ export default function DonatorsPageContent({
           >
             <p
               className="text-xs tracking-[0.4em] text-[#f2b866] mb-3 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Wall of Gratitude —
             </p>
             <h2
               className="text-3xl md:text-4xl font-bold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               All Donators
             </h2>
@@ -249,7 +249,7 @@ export default function DonatorsPageContent({
               <Heart className="w-12 h-12 text-gray-500 mx-auto mb-4" />
               <p
                 className="text-gray-300 text-base"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               >
                 Verified donators will appear here.
               </p>

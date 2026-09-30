@@ -152,7 +152,7 @@ export default function ProfileImageUpload({
         onClick={() => fileInputRef.current?.click()}
         disabled={uploading}
         className="text-xs text-[#e5a04b] hover:text-[#b7682c] transition-colors mb-1 cursor-pointer disabled:opacity-50"
-        style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+        style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
       >
         {uploading ? "Uploading..." : "Upload Photo"}
       </button>
@@ -163,7 +163,7 @@ export default function ProfileImageUpload({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -5 }}
             className="text-red-400 text-xs mt-1"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             {uploadError}
           </motion.p>

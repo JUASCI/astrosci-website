@@ -111,19 +111,19 @@ export default function AstronomyCalendar() {
         >
           <p
             className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             — Celestial Events —
           </p>
           <h2
             className="text-2xl md:text-3xl font-bold text-white"
-            style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+            style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
           >
             ASTRONOMY CALENDAR
           </h2>
           <p
             className="text-gray-500 text-sm mt-1"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             Events this month
           </p>
@@ -159,7 +159,7 @@ export default function AstronomyCalendar() {
           <div className="rounded-xl border border-white/10 bg-[#0c0c0c]/60 py-16 text-center">
             <p
               className="text-gray-500 text-sm"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               No astronomical events this month — check back soon!
             </p>
@@ -181,20 +181,20 @@ export default function AstronomyCalendar() {
                 <span className="w-2 h-2 rounded-full bg-[#e5a04b] animate-pulse" />
                 <span
                   className="text-[#e5a04b] text-xs tracking-widest uppercase"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 >
                   Next Astronomical Event
                 </span>
               </div>
               <h3
                 className="text-xl font-bold text-white"
-                style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
               >
                 {nearestEvent.title}
               </h3>
               <p
                 className="text-gray-400 text-sm mt-1"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               >
                 {nearestEvent.location}
               </p>
@@ -210,14 +210,14 @@ export default function AstronomyCalendar() {
                   <div className="w-14 h-14 rounded-lg bg-[#e5a04b]/10 border border-[#e5a04b]/30 flex items-center justify-center">
                     <span
                       className="text-xl font-bold text-white"
-                      style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                      style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                     >
                       {String(t.val).padStart(2, "0")}
                     </span>
                   </div>
                   <span
                     className="text-[10px] text-gray-500 mt-1"
-                    style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                    style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   >
                     {t.label}
                   </span>
@@ -241,7 +241,7 @@ export default function AstronomyCalendar() {
             >
               <p
                 className="text-[#e5a04b] text-xs mb-2"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               >
                 {new Date(event.event_date).toLocaleDateString("en-IN", {
                   month: "short",
@@ -251,13 +251,13 @@ export default function AstronomyCalendar() {
               </p>
               <h4
                 className="text-white font-bold text-sm mb-1"
-                style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
               >
                 {event.title}
               </h4>
               <p
                 className="text-gray-500 text-xs"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               >
                 {event.description}
               </p>

@@ -103,7 +103,7 @@ export default function SponsorsPageContent({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               className="flex items-center justify-center gap-2 rounded-xl border border-[#8f4e25]/40 bg-[#121212]/90 backdrop-blur-sm px-5 py-3 text-sm text-[#f2b866] hover:bg-[#121212] hover:border-[#f2b866]/60 transition-all duration-300 cursor-pointer"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               <Award className="w-4 h-4" />
               Already applied for sponsorship? Check your status here!
@@ -132,11 +132,11 @@ export default function SponsorsPageContent({
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p
               className="text-xs tracking-[0.4em] text-[#f2b866] mb-4 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Sponsorship —
             </p>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>
               <span className="bg-gradient-to-b from-white via-white to-gray-400 bg-clip-text text-transparent">
                 Support AstroSci Through{" "}
               </span>
@@ -144,7 +144,7 @@ export default function SponsorsPageContent({
             </h1>
             <p
               className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               Partner with us to promote science, education, and exploration. Your brand reaches a passionate community of astronomers and space enthusiasts.
             </p>
@@ -154,7 +154,7 @@ export default function SponsorsPageContent({
             <Link href="/sponsors/payment">
               <motion.span
                 className="inline-flex items-center gap-3 px-12 py-5 rounded-full bg-gradient-to-r from-[#8f4e25] to-[#f2b866] text-white font-bold text-base tracking-wider shadow-[0_0_40px_rgba(124,58,237,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 cursor-pointer"
-                style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.97 }}
               >
@@ -175,10 +175,10 @@ export default function SponsorsPageContent({
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <p className="text-xs tracking-[0.4em] text-[#f2b866] mb-3 uppercase" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+            <p className="text-xs tracking-[0.4em] text-[#f2b866] mb-3 uppercase" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
               — Plans —
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>
               Sponsorship Plans
             </h2>
           </motion.div>
@@ -202,7 +202,7 @@ export default function SponsorsPageContent({
                     <div className={`w-12 h-12 rounded-xl ${tierStyle.iconBg} flex items-center justify-center mb-4`}>
                       <Icon className={`w-6 h-6 ${tierStyle.iconColor}`} />
                     </div>
-                    <h3 className="text-lg font-bold text-white mb-2" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>
+                    <h3 className="text-lg font-bold text-white mb-2" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>
                       {plan.title}
                     </h3>
                     <p className="text-xs uppercase tracking-[0.22em] text-gray-300 mb-2">{tierStyle.label} Tier</p>
@@ -215,13 +215,13 @@ export default function SponsorsPageContent({
                       </span>
                       {plan.period && <span className="text-sm text-gray-400 ml-1">{plan.period}</span>}
                     </div>
-                    <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-1" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+                    <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-1" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
                       {plan.description}
                     </p>
                     <Link href="/sponsors/payment">
                       <motion.span
                         className={`inline-flex items-center justify-center w-full py-3 rounded-full border font-semibold text-sm tracking-wider hover:shadow-[0_0_20px_rgba(139,92,246,0.3)] transition-all duration-300 cursor-pointer ${tierStyle.button}`}
-                        style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                        style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                         whileHover={{ scale: 1.03 }}
                         whileTap={{ scale: 0.97 }}
                       >
@@ -245,10 +245,10 @@ export default function SponsorsPageContent({
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <p className="text-xs tracking-[0.4em] text-[#f2b866] mb-3 uppercase" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+            <p className="text-xs tracking-[0.4em] text-[#f2b866] mb-3 uppercase" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
               — Partners —
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>
               Our Sponsors
             </h2>
           </motion.div>
@@ -276,7 +276,7 @@ export default function SponsorsPageContent({
                       <Award className="w-8 h-8 text-[#f2b866]" />
                     )}
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-2" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>
+                  <h3 className="text-lg font-bold text-white mb-2" style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}>
                     {sponsor.name}
                   </h3>
                   {sponsor.website && (
@@ -300,7 +300,7 @@ export default function SponsorsPageContent({
               className="text-center py-16 rounded-2xl border border-[#8f4e25]/20 bg-[#121212]/40"
             >
               <Award className="w-12 h-12 text-[#f2b866]/60 mx-auto mb-4" />
-              <p className="text-gray-300 text-base" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+              <p className="text-gray-300 text-base" style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}>
                 Verified sponsors will appear here.
               </p>
               <p className="text-gray-500 text-sm mt-1">Be the first to sponsor AstroSci!</p>

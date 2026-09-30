@@ -51,19 +51,19 @@ export default function MagazinePage() {
           >
             <p
               className="text-xs tracking-[0.4em] text-[#b7682c] mb-2 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Publication —
             </p>
             <h1
               className="text-3xl md:text-5xl font-bold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               MAGAZINE
             </h1>
             <p
               className="text-gray-500 text-sm mt-3"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               All editions of our flagship astronomy magazine
             </p>
@@ -87,7 +87,7 @@ export default function MagazinePage() {
             <div className="rounded-xl border border-white/10 bg-[#0c0c0c]/60 py-16 text-center">
               <p
                 className="text-gray-500 text-sm"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               >
                 No magazines published yet — check back soon!
               </p>
@@ -133,13 +133,13 @@ export default function MagazinePage() {
                         <div>
                           <p
                             className="text-[#e5a04b] text-xs tracking-[0.3em] uppercase"
-                            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                           >
                             AstroSci · JU
                           </p>
                           <h3
                             className="text-xl font-black text-white leading-tight mt-1"
-                            style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                            style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                           >
                             {item.title}
                           </h3>
@@ -148,7 +148,7 @@ export default function MagazinePage() {
                           <div className="h-px w-full bg-gradient-to-r from-[#b7682c] to-[#c87938] mb-2 opacity-60" />
                           <p
                             className="text-2xl font-black text-white"
-                            style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                            style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                           >
                             {item.issue}
                           </p>
@@ -160,19 +160,19 @@ export default function MagazinePage() {
                 <div className="p-5">
                   <h3
                     className="text-white font-bold text-base mb-1"
-                    style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                    style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                   >
                     {item.title}
                   </h3>
                   <p
                     className="text-[#b7682c] text-sm"
-                    style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                    style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   >
                     {item.issue}
                   </p>
                   <p
                     className="text-gray-500 text-xs mt-1"
-                    style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                    style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   >
                     {new Date(item.published_at).toLocaleDateString("en-IN", {
                       year: "numeric",
@@ -185,7 +185,7 @@ export default function MagazinePage() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block mt-3 px-5 py-2 rounded-xl bg-gradient-to-r from-[#b7682c] to-[#8f4e25] text-white text-xs font-medium shadow-[0_0_20px_rgba(183,104,44,0.3)] hover:shadow-[0_0_30px_rgba(183,104,44,0.5)] transition-all"
-                      style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                      style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                       whileHover={{ scale: 1.04 }}
                       whileTap={{ scale: 0.97 }}
                     >
@@ -194,7 +194,7 @@ export default function MagazinePage() {
                   ) : (
                     <motion.button
                       className="mt-3 px-5 py-2 rounded-xl bg-gradient-to-r from-[#b7682c] to-[#8f4e25] text-white text-xs font-medium shadow-[0_0_20px_rgba(183,104,44,0.3)] hover:shadow-[0_0_30px_rgba(183,104,44,0.5)] transition-all"
-                      style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                      style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                       whileHover={{ scale: 1.04 }}
                       whileTap={{ scale: 0.97 }}
                     >

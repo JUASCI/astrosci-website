@@ -80,13 +80,13 @@ export default function ClubEventsSection() {
           <div>
             <p
               className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Club Activities —
             </p>
             <h2
               className="text-2xl md:text-3xl font-bold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               CLUB EVENTS
             </h2>
@@ -95,7 +95,7 @@ export default function ClubEventsSection() {
             <Link href="/events">
               <motion.span
                 className="text-xs sm:text-sm text-[#e5a04b] border border-[#e5a04b]/30 px-4 sm:px-5 py-2 rounded-full hover:bg-[#e5a04b]/10 transition-all cursor-pointer whitespace-nowrap"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 whileHover={{ scale: 1.05 }}
               >
                 View All Events
@@ -104,7 +104,7 @@ export default function ClubEventsSection() {
             <Link href="/events">
               <motion.span
                 className="text-xs sm:text-sm text-gray-400 border border-white/10 px-4 sm:px-5 py-2 rounded-full hover:bg-white/5 transition-all cursor-pointer hidden md:inline-block whitespace-nowrap"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 whileHover={{ scale: 1.05 }}
               >
                 Past Activities
@@ -141,7 +141,7 @@ export default function ClubEventsSection() {
           <div className="rounded-2xl border border-white/10 bg-[#0c0c0c]/60 py-16 text-center">
             <p
               className="text-gray-500 text-sm"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               No upcoming events — stay tuned!
             </p>
@@ -171,7 +171,7 @@ export default function ClubEventsSection() {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
                       <span
                         className="text-white text-xs bg-[#b7682c]/80 px-3 py-1 rounded-full"
-                        style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                        style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                       >
                         Click to enlarge
                       </span>
@@ -206,14 +206,14 @@ export default function ClubEventsSection() {
                       <span className="w-2 h-2 rounded-full bg-[#e5a04b] animate-pulse" />
                       <span
                         className="text-[#e5a04b] text-xs tracking-widest uppercase"
-                        style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                        style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                       >
                         {isExpired ? "Recent Event" : "Next Club Event"}
                       </span>
                     </div>
                     <h3
                       className="text-xl md:text-2xl font-bold text-white mb-3"
-                      style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                      style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                     >
                       {nextEvent.title}
                     </h3>
@@ -221,7 +221,7 @@ export default function ClubEventsSection() {
                       <span className="text-sm mt-0.5">📍</span>
                       <p
                         className="text-gray-300 text-sm"
-                        style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                        style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                       >
                         {nextEvent.location}
                       </p>
@@ -229,7 +229,7 @@ export default function ClubEventsSection() {
                     {nextEvent.description && (
                       <p
                         className="text-gray-400 text-sm leading-relaxed mt-2"
-                        style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                        style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                       >
                         {nextEvent.description}
                       </p>
@@ -240,13 +240,13 @@ export default function ClubEventsSection() {
                   <div className="shrink-0 text-left md:text-right bg-[#121212]/80 border border-[#b7682c]/20 rounded-xl px-4 py-3">
                     <p
                       className="text-gray-500 text-xs mb-1"
-                      style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                      style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                     >
                       Event Date
                     </p>
                     <p
                       className="text-white font-bold text-base"
-                      style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                      style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                     >
                       {new Date(nextEvent.event_date).toLocaleDateString("en-IN", {
                         month: "short",
@@ -256,7 +256,7 @@ export default function ClubEventsSection() {
                     </p>
                     <p
                       className="text-[#e5a04b] text-xs mt-1"
-                      style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                      style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                     >
                       {new Date(nextEvent.event_date).toLocaleTimeString("en-IN", {
                         hour: "2-digit",
@@ -272,7 +272,7 @@ export default function ClubEventsSection() {
                 <div>
                   <p
                     className="text-xs text-gray-600 uppercase tracking-widest mb-3"
-                    style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                    style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   >
                     {isExpired ? "Event has passed" : "Countdown"}
                   </p>
@@ -291,14 +291,14 @@ export default function ClubEventsSection() {
                               initial={{ opacity: 0.5, scale: 0.9 }}
                               animate={{ opacity: 1, scale: 1 }}
                               className="text-2xl md:text-3xl font-black text-white"
-                              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                             >
                               {String(t.val).padStart(2, "0")}
                             </motion.span>
                           </div>
                           <span
                             className="text-xs text-gray-500 mt-1 block"
-                            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                           >
                             {t.label}
                           </span>
@@ -316,7 +316,7 @@ export default function ClubEventsSection() {
                   <Link href="/events">
                     <motion.button
                       className="px-6 py-2.5 rounded-full bg-gradient-to-r from-[#b7682c]/30 to-[#e5a04b]/20 border border-[#b7682c]/50 text-white text-sm font-medium hover:from-[#b7682c]/50 hover:to-[#e5a04b]/30 hover:shadow-[0_0_24px_rgba(183,104,44,0.35)] transition-all duration-300"
-                      style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                      style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                       whileHover={{ scale: 1.04 }}
                       whileTap={{ scale: 0.97 }}
                     >

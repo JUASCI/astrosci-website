@@ -170,19 +170,19 @@ export default function MoonPhaseWidget({ preview = false }: MoonPhaseWidgetProp
           <div className="flex-1 min-w-0">
             <p
               className="text-xs tracking-[0.3em] text-[#e5a04b] mb-1 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               Moon Phase
             </p>
             <h3
               className="text-lg font-bold text-white truncate"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               {phaseName}
             </h3>
             <p
               className="text-sm text-[#e5e7eb]/70 mt-0.5"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               {illumination}% illuminated
             </p>
@@ -202,13 +202,13 @@ export default function MoonPhaseWidget({ preview = false }: MoonPhaseWidgetProp
     >
       <p
         className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
-        style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+        style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
       >
         — Current Moon Phase —
       </p>
       <h2
         className="text-2xl md:text-3xl font-bold text-white mb-8"
-        style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+        style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
       >
         {phaseName}
       </h2>
@@ -223,13 +223,13 @@ export default function MoonPhaseWidget({ preview = false }: MoonPhaseWidgetProp
             <div className="rounded-lg bg-[#050505]/60 border border-[#292522] p-4">
               <p
                 className="text-xs text-[#e5e7eb]/50 uppercase tracking-wider mb-1"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               >
                 Illumination
               </p>
               <p
                 className="text-2xl font-bold text-[#e5a04b]"
-                style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
               >
                 {illumination}%
               </p>
@@ -237,13 +237,13 @@ export default function MoonPhaseWidget({ preview = false }: MoonPhaseWidgetProp
             <div className="rounded-lg bg-[#050505]/60 border border-[#292522] p-4">
               <p
                 className="text-xs text-[#e5e7eb]/50 uppercase tracking-wider mb-1"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               >
                 Moon Age
               </p>
               <p
                 className="text-2xl font-bold text-[#e5a04b]"
-                style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
               >
                 {moonAge}d
               </p>
@@ -253,13 +253,13 @@ export default function MoonPhaseWidget({ preview = false }: MoonPhaseWidgetProp
           <div className="rounded-lg bg-[#050505]/60 border border-[#292522] p-4">
             <p
               className="text-xs text-[#e5e7eb]/50 uppercase tracking-wider mb-1"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               Next Full Moon
             </p>
             <p
               className="text-lg font-semibold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               {nextFullMoon.toLocaleDateString("en-US", {
                 weekday: "short",
@@ -273,7 +273,7 @@ export default function MoonPhaseWidget({ preview = false }: MoonPhaseWidgetProp
           {/* Illumination bar */}
           <div className="w-full">
             <div className="flex justify-between text-xs text-[#e5e7eb]/40 mb-1"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               <span>New</span>
               <span>Full</span>

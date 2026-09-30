@@ -54,19 +54,19 @@ export default function POTWPage() {
           >
             <p
               className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Photo of the Week —
             </p>
             <h1
               className="text-3xl md:text-5xl font-bold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               POTW ARCHIVE
             </h1>
             <p
               className="text-gray-500 text-sm mt-3"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               All previous Picture of the Week winners
             </p>
@@ -89,7 +89,7 @@ export default function POTWPage() {
             <div className="rounded-xl border border-white/10 bg-[#0c0c0c]/60 py-16 text-center">
               <p
                 className="text-gray-500 text-sm"
-                style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               >
                 No featured photos yet — check back soon!
               </p>
@@ -137,7 +137,7 @@ export default function POTWPage() {
                   <div className="absolute top-3 left-3">
                     <span
                       className="px-2 py-1 rounded-full bg-[#e5a04b]/20 border border-[#e5a04b]/40 text-[#e5a04b] text-xs backdrop-blur-sm"
-                      style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                      style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                     >
                       ★ POTW
                     </span>
@@ -146,19 +146,19 @@ export default function POTWPage() {
                 <div className="p-5">
                   <h3
                     className="text-white font-bold text-base mb-1"
-                    style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                    style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                   >
                     {item.title}
                   </h3>
                   <p
                     className="text-[#e5a04b] text-sm"
-                    style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                    style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   >
                     📸 {item.photographer}
                   </p>
                   <p
                     className="text-gray-500 text-xs mt-2"
-                    style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                    style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   >
                     {new Date(item.week_date).toLocaleDateString("en-IN", {
                       year: "numeric",

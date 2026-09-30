@@ -56,13 +56,13 @@ export default function DashboardMagazinePreview() {
           <div>
             <p
               className="text-xs tracking-[0.4em] text-[#b7682c] mb-2 uppercase"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Publication —
             </p>
             <h2
               className="text-2xl md:text-3xl font-bold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               LATEST MAGAZINE
             </h2>
@@ -70,7 +70,7 @@ export default function DashboardMagazinePreview() {
           <Link href="/magazine">
             <motion.span
               className="text-xs sm:text-sm text-[#b7682c] border border-[#b7682c]/30 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full hover:bg-[#b7682c]/10 transition-all cursor-pointer whitespace-nowrap"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
               whileHover={{ scale: 1.05 }}
             >
               View All →
@@ -96,7 +96,7 @@ export default function DashboardMagazinePreview() {
           <div className="rounded-xl border border-white/10 bg-[#0c0c0c]/60 py-16 text-center">
             <p
               className="text-gray-500 text-sm"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               No magazines published yet — check back soon!
             </p>
@@ -146,13 +146,13 @@ export default function DashboardMagazinePreview() {
                       <div>
                         <p
                           className="text-[#e5a04b] text-xs tracking-[0.3em] uppercase mb-1"
-                          style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                          style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                         >
                           AstroSci Club · JU
                         </p>
                         <h3
                           className="text-xl font-black text-white leading-tight"
-                          style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                          style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                         >
                           {magazine.title}
                         </h3>
@@ -161,7 +161,7 @@ export default function DashboardMagazinePreview() {
                         <div className="h-px w-full bg-gradient-to-r from-[#b7682c] to-[#c87938] mb-3 opacity-60" />
                         <p
                           className="text-2xl font-black text-white"
-                          style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                          style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                         >
                           {magazine.issue}
                         </p>
@@ -177,13 +177,13 @@ export default function DashboardMagazinePreview() {
           <div className="flex flex-col gap-4">
             <h3
               className="text-xl md:text-2xl font-bold text-white"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+              style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
             >
               {magazine.title} — <span className="text-[#b7682c]">{magazine.issue}</span>
             </h3>
             <p
               className="text-gray-400 text-sm"
-              style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+              style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
             >
               {new Date(magazine.published_at).toLocaleDateString("en-IN", {
                 year: "numeric",
@@ -197,7 +197,7 @@ export default function DashboardMagazinePreview() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-gradient-to-r from-[#b7682c] to-[#8f4e25] text-white text-xs sm:text-sm font-semibold shadow-[0_0_25px_rgba(183,104,44,0.4)] hover:shadow-[0_0_40px_rgba(183,104,44,0.6)] transition-all duration-300"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                 >
@@ -206,7 +206,7 @@ export default function DashboardMagazinePreview() {
               ) : (
                 <motion.button
                   className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-gradient-to-r from-[#b7682c] to-[#8f4e25] text-white text-xs sm:text-sm font-semibold shadow-[0_0_25px_rgba(183,104,44,0.4)] hover:shadow-[0_0_40px_rgba(183,104,44,0.6)] transition-all duration-300"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                 >
@@ -216,7 +216,7 @@ export default function DashboardMagazinePreview() {
               <Link href="/magazine">
                 <motion.span
                   className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl border border-white/10 text-gray-400 text-xs sm:text-sm hover:border-white/20 hover:text-white transition-all duration-300 inline-block cursor-pointer"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   whileHover={{ scale: 1.03 }}
                 >
                   View All →

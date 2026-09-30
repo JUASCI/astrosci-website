@@ -102,7 +102,7 @@ export default function AuthCard() {
                 </div>
                 <h1
                   className="text-2xl font-bold text-white mb-1"
-                  style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+                  style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
                 >
                   Welcome to{" "}
                   <span className="bg-gradient-to-r from-[#b7682c] to-[#c87938] bg-clip-text text-transparent">
@@ -111,7 +111,7 @@ export default function AuthCard() {
                 </h1>
                 <p
                   className="text-gray-400 text-sm"
-                  style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+                  style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                 >
                   Explore the universe with fellow astronomers.
                 </p>

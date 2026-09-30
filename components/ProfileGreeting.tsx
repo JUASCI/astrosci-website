@@ -91,13 +91,13 @@ export default function ProfileGreeting() {
         >
           <p
             className="text-xs tracking-[0.3em] text-[#e5a04b] uppercase mb-1"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
+            style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
           >
             {greeting}
           </p>
           <h1
             className="text-2xl md:text-3xl font-bold text-white"
-            style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
+            style={{ fontFamily: "'Barlow Condensed', 'Inter', sans-serif" }}
           >
             Hello, {userName}
           </h1>
