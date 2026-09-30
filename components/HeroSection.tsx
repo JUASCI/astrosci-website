@@ -3,16 +3,25 @@
 import { motion } from "framer-motion";
 import { ArrowDownRight, MoveUpRight } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
-import BlackHole from "@/components/ui/black-hole";
 
 export default function HeroSection() {
   return (
     <section id="home" className="relative isolate min-h-[100dvh] overflow-hidden bg-[#050505]">
-      <div className="absolute inset-0 z-0 opacity-90" aria-hidden="true">
-        <BlackHole />
-      </div>
-      <div className="absolute inset-0 z-[1] bg-[radial-gradient(circle_at_55%_48%,transparent_0%,rgba(5,5,5,0.12)_35%,rgba(5,5,5,0.84)_100%)]" aria-hidden="true" />
-      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-[#050505]/25 via-transparent to-[#050505]" aria-hidden="true" />
+      <motion.div
+        initial={{ scale: 1.04, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
+        className="absolute inset-0 z-0"
+        aria-hidden="true"
+      >
+        <img
+          src="/assets/black-hole-background.png"
+          alt=""
+          className="h-full w-full object-cover object-center"
+        />
+      </motion.div>
+      <div className="absolute inset-0 z-[1] bg-[radial-gradient(circle_at_50%_48%,transparent_0%,rgba(5,5,5,0.12)_34%,rgba(5,5,5,0.78)_100%)]" aria-hidden="true" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-[#050505]/35 via-transparent to-[#050505]" aria-hidden="true" />
       <div
         className="absolute inset-0 z-[1] opacity-[0.08] [background-image:linear-gradient(rgba(255,255,255,0.55)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.55)_1px,transparent_1px)] [background-size:96px_96px]"
         aria-hidden="true"
