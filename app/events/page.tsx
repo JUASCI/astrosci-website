@@ -21,7 +21,7 @@ export default function EventsPage() {
   const [loading, setLoading] = useState(true);
   const [fullscreenEvent, setFullscreenEvent] = useState<ClubEvent | null>(null);
 
-  const defaultGradient = "radial-gradient(ellipse at 50% 50%, #1e3a5f 0%, #020617 100%)";
+  const defaultGradient = "radial-gradient(ellipse at 50% 50%, #2a1e16 0%, #050505 100%)";
 
   useEffect(() => {
     async function fetchEvents() {
@@ -59,7 +59,7 @@ export default function EventsPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: i * 0.1 }}
         whileHover={{ y: -4 }}
-        className="group rounded-2xl overflow-hidden border border-white/10 bg-[#07091a]/80 backdrop-blur-sm hover:border-[#2563eb]/40 transition-all"
+        className="group rounded-2xl overflow-hidden border border-white/10 bg-[#0c0c0c]/80 backdrop-blur-sm hover:border-[#b7682c]/40 transition-all"
       >
         <div
           className="relative overflow-hidden cursor-pointer"
@@ -98,7 +98,7 @@ export default function EventsPage() {
             {event.title}
           </h3>
           <p
-            className="text-[#38bdf8] text-xs mb-2"
+            className="text-[#e5a04b] text-xs mb-2"
             style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
           >
             {new Date(event.event_date).toLocaleDateString("en-IN", {
@@ -132,7 +132,7 @@ export default function EventsPage() {
             className="text-center mb-12"
           >
             <p
-              className="text-xs tracking-[0.4em] text-[#38bdf8] mb-2 uppercase"
+              className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
               style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Club Activities —
@@ -151,24 +151,24 @@ export default function EventsPage() {
               className="text-xl font-bold text-white mb-6 flex items-center gap-2"
               style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
             >
-              <span className="w-2 h-2 rounded-full bg-[#38bdf8] animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-[#e5a04b] animate-pulse" />
               Upcoming Events
             </h2>
             {loading ? (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {[...Array(2)].map((_, i) => (
-                  <div key={i} className="rounded-2xl overflow-hidden border border-white/10 bg-[#07091a]/80 animate-pulse">
-                    <div className="w-full bg-[#0f172a]" style={{ aspectRatio: "16/9" }} />
+                  <div key={i} className="rounded-2xl overflow-hidden border border-white/10 bg-[#0c0c0c]/80 animate-pulse">
+                    <div className="w-full bg-[#121212]" style={{ aspectRatio: "16/9" }} />
                     <div className="p-5">
-                      <div className="h-4 bg-[#0f172a] rounded w-3/4 mb-2" />
-                      <div className="h-3 bg-[#0f172a] rounded w-1/2 mb-2" />
-                      <div className="h-3 bg-[#0f172a] rounded w-full" />
+                      <div className="h-4 bg-[#121212] rounded w-3/4 mb-2" />
+                      <div className="h-3 bg-[#121212] rounded w-1/2 mb-2" />
+                      <div className="h-3 bg-[#121212] rounded w-full" />
                     </div>
                   </div>
                 ))}
               </div>
             ) : upcoming.length === 0 ? (
-              <div className="rounded-xl border border-white/10 bg-[#07091a]/60 py-16 text-center">
+              <div className="rounded-xl border border-white/10 bg-[#0c0c0c]/60 py-16 text-center">
                 <p
                   className="text-gray-500 text-sm"
                   style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
@@ -194,18 +194,18 @@ export default function EventsPage() {
             {loading ? (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 opacity-80">
                 {[...Array(2)].map((_, i) => (
-                  <div key={i} className="rounded-2xl overflow-hidden border border-white/10 bg-[#07091a]/80 animate-pulse">
-                    <div className="w-full bg-[#0f172a]" style={{ aspectRatio: "16/9" }} />
+                  <div key={i} className="rounded-2xl overflow-hidden border border-white/10 bg-[#0c0c0c]/80 animate-pulse">
+                    <div className="w-full bg-[#121212]" style={{ aspectRatio: "16/9" }} />
                     <div className="p-5">
-                      <div className="h-4 bg-[#0f172a] rounded w-3/4 mb-2" />
-                      <div className="h-3 bg-[#0f172a] rounded w-1/2 mb-2" />
-                      <div className="h-3 bg-[#0f172a] rounded w-full" />
+                      <div className="h-4 bg-[#121212] rounded w-3/4 mb-2" />
+                      <div className="h-3 bg-[#121212] rounded w-1/2 mb-2" />
+                      <div className="h-3 bg-[#121212] rounded w-full" />
                     </div>
                   </div>
                 ))}
               </div>
             ) : past.length === 0 ? (
-              <div className="rounded-xl border border-white/10 bg-[#07091a]/60 py-16 text-center opacity-80">
+              <div className="rounded-xl border border-white/10 bg-[#0c0c0c]/60 py-16 text-center opacity-80">
                 <p
                   className="text-gray-500 text-sm"
                   style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}

@@ -153,7 +153,7 @@ export default function StarfieldBackground() {
 
         ctx.beginPath();
         ctx.arc(s.x, drawY, s.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(165,243,252,${s.opacity})`;
+        ctx.fillStyle = `rgba(229,160,75,${s.opacity})`;
         ctx.fill();
       });
 
@@ -192,9 +192,9 @@ export default function StarfieldBackground() {
         ctx.beginPath();
         ctx.moveTo(cl.x1, parallaxY1);
         ctx.lineTo(cl.x2, parallaxY2);
-        ctx.strokeStyle = `rgba(165,243,252,${cl.opacity})`;
+        ctx.strokeStyle = `rgba(229,160,75,${cl.opacity})`;
         ctx.lineWidth = 0.8;
-        ctx.shadowColor = "rgba(165,243,252,0.5)";
+        ctx.shadowColor = "rgba(229,160,75,0.5)";
         ctx.shadowBlur = 4;
         ctx.stroke();
         ctx.shadowBlur = 0;
@@ -226,15 +226,15 @@ export default function StarfieldBackground() {
         const tailY = ss.y - ss.dirY * ss.length;
 
         const gradient = ctx.createLinearGradient(tailX, tailY, ss.x, ss.y);
-        gradient.addColorStop(0, `rgba(165,243,252,0)`);
-        gradient.addColorStop(1, `rgba(165,243,252,${ss.opacity})`);
+        gradient.addColorStop(0, `rgba(229,160,75,0)`);
+        gradient.addColorStop(1, `rgba(229,160,75,${ss.opacity})`);
 
         ctx.beginPath();
         ctx.moveTo(tailX, tailY);
         ctx.lineTo(ss.x, ss.y);
         ctx.strokeStyle = gradient;
         ctx.lineWidth = 1.5;
-        ctx.shadowColor = "rgba(165,243,252,0.8)";
+        ctx.shadowColor = "rgba(229,160,75,0.8)";
         ctx.shadowBlur = 6;
         ctx.stroke();
         ctx.shadowBlur = 0;

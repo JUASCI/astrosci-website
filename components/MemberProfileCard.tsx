@@ -44,7 +44,7 @@ export default function MemberProfileCard({
             transition={{ duration: 0.25, ease: "easeOut" }}
             className="fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] max-w-sm"
           >
-            <div className="rounded-2xl border border-white/10 bg-[#07091a]/95 backdrop-blur-xl p-6 shadow-2xl">
+            <div className="rounded-2xl border border-white/10 bg-[#0c0c0c]/95 backdrop-blur-xl p-6 shadow-2xl">
               {/* Close button */}
               <button
                 onClick={onClose}
@@ -78,7 +78,7 @@ export default function MemberProfileCard({
                         className="w-full h-full object-cover"
                       />
                     ) : (
-                      <div className="w-full h-full bg-gradient-to-br from-[#2563eb] to-[#10b981] flex items-center justify-center">
+                      <div className="w-full h-full bg-gradient-to-br from-[#b7682c] to-[#c87938] flex items-center justify-center">
                         <svg
                           viewBox="0 0 24 24"
                           className="w-8 h-8 text-white fill-current"
@@ -128,7 +128,7 @@ export default function MemberProfileCard({
               <div className="flex justify-center mt-6">
                 <Link href={`/profile/${userId}`}>
                   <motion.span
-                    className="inline-flex px-6 py-2.5 rounded-full text-sm font-medium bg-gradient-to-r from-[#2563eb] to-[#1d4ed8] text-white shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)] transition-all duration-300 cursor-pointer"
+                    className="inline-flex px-6 py-2.5 rounded-full text-sm font-medium bg-gradient-to-r from-[#b7682c] to-[#8f4e25] text-white shadow-[0_0_20px_rgba(183,104,44,0.3)] hover:shadow-[0_0_30px_rgba(183,104,44,0.5)] transition-all duration-300 cursor-pointer"
                     style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.97 }}

@@ -40,10 +40,10 @@ export default function DashboardMagazinePreview() {
   return (
     <section
       className="py-16 px-6 relative overflow-hidden"
-      style={{ background: "linear-gradient(180deg, #020617 0%, #05021a 50%, #020617 100%)" }}
+      style={{ background: "linear-gradient(180deg, #050505 0%, #05021a 50%, #050505 100%)" }}
     >
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#2563eb]/30 to-transparent" />
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#2563eb]/6 rounded-full blur-[120px] -translate-y-1/2" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#b7682c]/30 to-transparent" />
+      <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#b7682c]/6 rounded-full blur-[120px] -translate-y-1/2" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
@@ -55,7 +55,7 @@ export default function DashboardMagazinePreview() {
         >
           <div>
             <p
-              className="text-xs tracking-[0.4em] text-[#2563eb] mb-2 uppercase"
+              className="text-xs tracking-[0.4em] text-[#b7682c] mb-2 uppercase"
               style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Publication —
@@ -69,7 +69,7 @@ export default function DashboardMagazinePreview() {
           </div>
           <Link href="/magazine">
             <motion.span
-              className="text-xs sm:text-sm text-[#2563eb] border border-[#2563eb]/30 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full hover:bg-[#2563eb]/10 transition-all cursor-pointer whitespace-nowrap"
+              className="text-xs sm:text-sm text-[#b7682c] border border-[#b7682c]/30 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full hover:bg-[#b7682c]/10 transition-all cursor-pointer whitespace-nowrap"
               style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
               whileHover={{ scale: 1.05 }}
             >
@@ -81,19 +81,19 @@ export default function DashboardMagazinePreview() {
         {loading ? (
           <div className="grid md:grid-cols-2 gap-8 items-center animate-pulse">
             <div className="mx-auto max-w-xs w-full">
-              <div className="rounded-2xl overflow-hidden border border-[#2563eb]/20 bg-[#0f172a]" style={{ aspectRatio: "3/4" }} />
+              <div className="rounded-2xl overflow-hidden border border-[#b7682c]/20 bg-[#121212]" style={{ aspectRatio: "3/4" }} />
             </div>
             <div className="flex flex-col gap-4">
-              <div className="h-6 bg-[#0f172a] rounded w-3/4" />
-              <div className="h-4 bg-[#0f172a] rounded w-1/3" />
+              <div className="h-6 bg-[#121212] rounded w-3/4" />
+              <div className="h-4 bg-[#121212] rounded w-1/3" />
               <div className="flex gap-3 mt-2">
-                <div className="h-10 bg-[#0f172a] rounded-xl w-28" />
-                <div className="h-10 bg-[#0f172a] rounded-xl w-28" />
+                <div className="h-10 bg-[#121212] rounded-xl w-28" />
+                <div className="h-10 bg-[#121212] rounded-xl w-28" />
               </div>
             </div>
           </div>
         ) : !magazine ? (
-          <div className="rounded-xl border border-white/10 bg-[#07091a]/60 py-16 text-center">
+          <div className="rounded-xl border border-white/10 bg-[#0c0c0c]/60 py-16 text-center">
             <p
               className="text-gray-500 text-sm"
               style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
@@ -112,9 +112,9 @@ export default function DashboardMagazinePreview() {
           {/* Cover */}
           <div className="group mx-auto max-w-xs">
             <div className="relative">
-              <div className="absolute -inset-3 bg-[#2563eb]/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700" />
+              <div className="absolute -inset-3 bg-[#b7682c]/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700" />
               <div
-                className="relative rounded-2xl overflow-hidden border border-[#2563eb]/30 group-hover:border-[#2563eb]/60 transition-all duration-500 cursor-pointer"
+                className="relative rounded-2xl overflow-hidden border border-[#b7682c]/30 group-hover:border-[#b7682c]/60 transition-all duration-500 cursor-pointer"
                 style={{ aspectRatio: "3/4" }}
                 onClick={() => magazine.cover_image && setFullscreenOpen(true)}
               >
@@ -127,7 +127,7 @@ export default function DashboardMagazinePreview() {
                 ) : (
                   <div
                     className="w-full h-full relative"
-                    style={{ background: "linear-gradient(135deg, #020617 0%, #1a0a3e 40%, #030e1a 100%)" }}
+                    style={{ background: "linear-gradient(135deg, #050505 0%, #1a0a3e 40%, #030e1a 100%)" }}
                   >
                     {[...Array(40)].map((_, i) => (
                       <div
@@ -145,7 +145,7 @@ export default function DashboardMagazinePreview() {
                     <div className="absolute inset-0 flex flex-col justify-between p-6">
                       <div>
                         <p
-                          className="text-[#38bdf8] text-xs tracking-[0.3em] uppercase mb-1"
+                          className="text-[#e5a04b] text-xs tracking-[0.3em] uppercase mb-1"
                           style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
                         >
                           AstroSci Club · JU
@@ -158,7 +158,7 @@ export default function DashboardMagazinePreview() {
                         </h3>
                       </div>
                       <div>
-                        <div className="h-px w-full bg-gradient-to-r from-[#2563eb] to-[#10b981] mb-3 opacity-60" />
+                        <div className="h-px w-full bg-gradient-to-r from-[#b7682c] to-[#c87938] mb-3 opacity-60" />
                         <p
                           className="text-2xl font-black text-white"
                           style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
@@ -179,7 +179,7 @@ export default function DashboardMagazinePreview() {
               className="text-xl md:text-2xl font-bold text-white"
               style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
             >
-              {magazine.title} — <span className="text-[#2563eb]">{magazine.issue}</span>
+              {magazine.title} — <span className="text-[#b7682c]">{magazine.issue}</span>
             </h3>
             <p
               className="text-gray-400 text-sm"
@@ -196,7 +196,7 @@ export default function DashboardMagazinePreview() {
                   href={magazine.pdf_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-gradient-to-r from-[#2563eb] to-[#1d4ed8] text-white text-xs sm:text-sm font-semibold shadow-[0_0_25px_rgba(37,99,235,0.4)] hover:shadow-[0_0_40px_rgba(37,99,235,0.6)] transition-all duration-300"
+                  className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-gradient-to-r from-[#b7682c] to-[#8f4e25] text-white text-xs sm:text-sm font-semibold shadow-[0_0_25px_rgba(183,104,44,0.4)] hover:shadow-[0_0_40px_rgba(183,104,44,0.6)] transition-all duration-300"
                   style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
@@ -205,7 +205,7 @@ export default function DashboardMagazinePreview() {
                 </motion.a>
               ) : (
                 <motion.button
-                  className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-gradient-to-r from-[#2563eb] to-[#1d4ed8] text-white text-xs sm:text-sm font-semibold shadow-[0_0_25px_rgba(37,99,235,0.4)] hover:shadow-[0_0_40px_rgba(37,99,235,0.6)] transition-all duration-300"
+                  className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-gradient-to-r from-[#b7682c] to-[#8f4e25] text-white text-xs sm:text-sm font-semibold shadow-[0_0_25px_rgba(183,104,44,0.4)] hover:shadow-[0_0_40px_rgba(183,104,44,0.6)] transition-all duration-300"
                   style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}

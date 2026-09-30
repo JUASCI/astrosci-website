@@ -41,7 +41,7 @@ export default function ProfileCard({
           </span>
           {row.highlight ? (
             <span
-              className="text-[#38bdf8] text-sm px-3 py-1 rounded-full bg-[#38bdf8]/10 border border-[#38bdf8]/30"
+              className="text-[#e5a04b] text-sm px-3 py-1 rounded-full bg-[#e5a04b]/10 border border-[#e5a04b]/30"
               style={fontMono}
             >
               {row.value}

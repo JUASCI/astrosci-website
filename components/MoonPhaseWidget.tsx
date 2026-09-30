@@ -101,7 +101,7 @@ function MoonVisual({ phaseRatio, size }: { phaseRatio: number; size: number }) 
               cy={radius}
               rx={Math.abs(shadowX) * radius}
               ry={radius}
-              fill="#020617"
+              fill="#050505"
               opacity={0.92}
               transform={shadowX < 0 ? `translate(${-radius + Math.abs(shadowX) * radius}, 0)` : undefined}
               style={shadowX >= 0 ? { transform: `translateX(${-radius + shadowX * radius}px)` } : undefined}
@@ -113,14 +113,14 @@ function MoonVisual({ phaseRatio, size }: { phaseRatio: number; size: number }) 
               cy={radius}
               rx={Math.abs(shadowX) * radius}
               ry={radius}
-              fill="#020617"
+              fill="#050505"
               opacity={0.92}
               style={{ transform: `translateX(${radius - Math.abs(shadowX) * radius}px)` }}
             />
           )}
           {/* Near new moon, cover everything */}
           {illuminationFraction < 0.03 && (
-            <circle cx={radius} cy={radius} r={radius} fill="#020617" opacity={0.92} />
+            <circle cx={radius} cy={radius} r={radius} fill="#050505" opacity={0.92} />
           )}
         </g>
       </svg>
@@ -146,10 +146,10 @@ export default function MoonPhaseWidget({ preview = false }: MoonPhaseWidgetProp
 
   if (!phaseData) {
     return (
-      <div className={`rounded-xl border border-[#1f2937] bg-[#0f172a] ${preview ? "p-4" : "p-6"} animate-pulse`}>
-        <div className="h-4 bg-[#1f2937] rounded w-1/3 mb-3" />
-        <div className="h-8 bg-[#1f2937] rounded w-1/2 mb-4" />
-        <div className={`${preview ? "h-16 w-16" : "h-32 w-32"} rounded-full bg-[#1f2937] mx-auto`} />
+      <div className={`rounded-xl border border-[#292522] bg-[#121212] ${preview ? "p-4" : "p-6"} animate-pulse`}>
+        <div className="h-4 bg-[#292522] rounded w-1/3 mb-3" />
+        <div className="h-8 bg-[#292522] rounded w-1/2 mb-4" />
+        <div className={`${preview ? "h-16 w-16" : "h-32 w-32"} rounded-full bg-[#292522] mx-auto`} />
       </div>
     );
   }
@@ -163,13 +163,13 @@ export default function MoonPhaseWidget({ preview = false }: MoonPhaseWidgetProp
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="rounded-xl border border-[#1f2937] bg-[#0f172a]/80 p-5 hover:border-[#38bdf8]/30 transition-all"
+        className="rounded-xl border border-[#292522] bg-[#121212]/80 p-5 hover:border-[#e5a04b]/30 transition-all"
       >
         <div className="flex items-center gap-4">
           <MoonVisual phaseRatio={phaseRatio} size={56} />
           <div className="flex-1 min-w-0">
             <p
-              className="text-xs tracking-[0.3em] text-[#38bdf8] mb-1 uppercase"
+              className="text-xs tracking-[0.3em] text-[#e5a04b] mb-1 uppercase"
               style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
             >
               Moon Phase
@@ -198,10 +198,10 @@ export default function MoonPhaseWidget({ preview = false }: MoonPhaseWidgetProp
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7 }}
-      className="rounded-xl border border-[#1f2937] bg-[#0f172a]/80 p-8"
+      className="rounded-xl border border-[#292522] bg-[#121212]/80 p-8"
     >
       <p
-        className="text-xs tracking-[0.4em] text-[#38bdf8] mb-2 uppercase"
+        className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
         style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
       >
         — Current Moon Phase —
@@ -220,7 +220,7 @@ export default function MoonPhaseWidget({ preview = false }: MoonPhaseWidgetProp
 
         <div className="flex-1 space-y-4">
           <div className="grid grid-cols-2 gap-4">
-            <div className="rounded-lg bg-[#020617]/60 border border-[#1f2937] p-4">
+            <div className="rounded-lg bg-[#050505]/60 border border-[#292522] p-4">
               <p
                 className="text-xs text-[#e5e7eb]/50 uppercase tracking-wider mb-1"
                 style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
@@ -228,13 +228,13 @@ export default function MoonPhaseWidget({ preview = false }: MoonPhaseWidgetProp
                 Illumination
               </p>
               <p
-                className="text-2xl font-bold text-[#38bdf8]"
+                className="text-2xl font-bold text-[#e5a04b]"
                 style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
               >
                 {illumination}%
               </p>
             </div>
-            <div className="rounded-lg bg-[#020617]/60 border border-[#1f2937] p-4">
+            <div className="rounded-lg bg-[#050505]/60 border border-[#292522] p-4">
               <p
                 className="text-xs text-[#e5e7eb]/50 uppercase tracking-wider mb-1"
                 style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
@@ -242,7 +242,7 @@ export default function MoonPhaseWidget({ preview = false }: MoonPhaseWidgetProp
                 Moon Age
               </p>
               <p
-                className="text-2xl font-bold text-[#38bdf8]"
+                className="text-2xl font-bold text-[#e5a04b]"
                 style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
               >
                 {moonAge}d
@@ -250,7 +250,7 @@ export default function MoonPhaseWidget({ preview = false }: MoonPhaseWidgetProp
             </div>
           </div>
 
-          <div className="rounded-lg bg-[#020617]/60 border border-[#1f2937] p-4">
+          <div className="rounded-lg bg-[#050505]/60 border border-[#292522] p-4">
             <p
               className="text-xs text-[#e5e7eb]/50 uppercase tracking-wider mb-1"
               style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
@@ -278,13 +278,13 @@ export default function MoonPhaseWidget({ preview = false }: MoonPhaseWidgetProp
               <span>New</span>
               <span>Full</span>
             </div>
-            <div className="h-2 rounded-full bg-[#020617] border border-[#1f2937] overflow-hidden">
+            <div className="h-2 rounded-full bg-[#050505] border border-[#292522] overflow-hidden">
               <motion.div
                 initial={{ width: 0 }}
                 whileInView={{ width: `${illumination}%` }}
                 viewport={{ once: true }}
                 transition={{ duration: 1, ease: "easeOut" }}
-                className="h-full rounded-full bg-gradient-to-r from-[#38bdf8]/60 to-[#38bdf8]"
+                className="h-full rounded-full bg-gradient-to-r from-[#e5a04b]/60 to-[#e5a04b]"
               />
             </div>
           </div>

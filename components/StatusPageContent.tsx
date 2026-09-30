@@ -105,7 +105,7 @@ function RecordCard({
       variants={fadeUp}
       initial="hidden"
       animate="visible"
-      className={`relative overflow-hidden rounded-2xl border ${borderColor} bg-[#0a0f2c]/80 p-6 shadow-lg ${glowColor} backdrop-blur-md`}
+      className={`relative overflow-hidden rounded-2xl border ${borderColor} bg-[#11100e]/80 p-6 shadow-lg ${glowColor} backdrop-blur-md`}
     >
       {/* header */}
       <div className="mb-4 flex items-start justify-between gap-4">
@@ -233,7 +233,7 @@ function VerifiedMessage({
       </p>
       <button
         aria-label="Download Official Certificate"
-        className="group relative mt-1 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-yellow-500 px-8 py-3.5 text-sm font-bold text-[#020617] shadow-[0_0_24px_rgba(6,182,212,0.4)] transition-shadow hover:shadow-[0_0_40px_rgba(6,182,212,0.6)]"
+        className="group relative mt-1 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-yellow-500 px-8 py-3.5 text-sm font-bold text-[#050505] shadow-[0_0_24px_rgba(6,182,212,0.4)] transition-shadow hover:shadow-[0_0_40px_rgba(6,182,212,0.6)]"
       >
         <Download className="h-5 w-5 transition-transform group-hover:-translate-y-0.5" />
         Download Official Certificate
@@ -285,7 +285,7 @@ export default function StatusPageContent({
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="mx-auto max-w-md rounded-2xl border border-blue-500/20 bg-[#0a0f2c]/80 p-8 text-center backdrop-blur-md"
+              className="mx-auto max-w-md rounded-2xl border border-blue-500/20 bg-[#11100e]/80 p-8 text-center backdrop-blur-md"
             >
               <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-500/10">
                 <LogIn className="h-8 w-8 text-blue-400" />
@@ -322,7 +322,7 @@ export default function StatusPageContent({
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="mx-auto max-w-md rounded-2xl border border-slate-700/60 bg-[#0a0f2c]/80 p-8 text-center backdrop-blur-md"
+              className="mx-auto max-w-md rounded-2xl border border-slate-700/60 bg-[#11100e]/80 p-8 text-center backdrop-blur-md"
             >
               <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-800">
                 <Rocket className="h-8 w-8 text-slate-500" />

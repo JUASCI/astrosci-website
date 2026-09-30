@@ -20,7 +20,7 @@ export default function AstronomyPage() {
             transition={{ duration: 0.7 }}
           >
             <p
-              className="text-xs tracking-[0.4em] text-[#38bdf8] mb-3 uppercase"
+              className="text-xs tracking-[0.4em] text-[#e5a04b] mb-3 uppercase"
               style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Live Data —

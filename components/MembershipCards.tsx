@@ -55,7 +55,7 @@ export default function MembershipCards() {
 
   return (
     <section className="py-16 px-6 relative overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#2563eb]/20 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#b7682c]/20 to-transparent" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
@@ -66,7 +66,7 @@ export default function MembershipCards() {
           className="text-center mb-10"
         >
           <p
-            className="text-xs tracking-[0.4em] text-[#2563eb] mb-2 uppercase"
+            className="text-xs tracking-[0.4em] text-[#b7682c] mb-2 uppercase"
             style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
           >
             — Plans —
@@ -107,7 +107,7 @@ export default function MembershipCards() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.15 }}
                 whileHover={{ y: -6 }}
-                className={`relative rounded-2xl border bg-[#07091a]/80 backdrop-blur-sm p-6 transition-all ${tierStyles.border}`}
+                className={`relative rounded-2xl border bg-[#0c0c0c]/80 backdrop-blur-sm p-6 transition-all ${tierStyles.border}`}
               >
                 {plan.tier === "annual" && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
@@ -123,7 +123,7 @@ export default function MembershipCards() {
                 {isActive && (
                   <div className="absolute top-4 right-4">
                     <span
-                      className="px-2 py-1 rounded-full bg-[#38bdf8]/20 border border-[#38bdf8]/40 text-[#38bdf8] text-xs"
+                      className="px-2 py-1 rounded-full bg-[#e5a04b]/20 border border-[#e5a04b]/40 text-[#e5a04b] text-xs"
                       style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
                     >
                       Active
@@ -196,7 +196,7 @@ export default function MembershipCards() {
         >
           <Link href="/support">
             <motion.span
-              className="px-5 sm:px-6 py-3 rounded-full border border-[#38bdf8]/30 text-[#38bdf8] text-xs sm:text-sm hover:bg-[#38bdf8]/10 transition-all cursor-pointer whitespace-nowrap"
+              className="px-5 sm:px-6 py-3 rounded-full border border-[#e5a04b]/30 text-[#e5a04b] text-xs sm:text-sm hover:bg-[#e5a04b]/10 transition-all cursor-pointer whitespace-nowrap"
               style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
               whileHover={{ scale: 1.05 }}
             >
@@ -205,7 +205,7 @@ export default function MembershipCards() {
           </Link>
           <Link href="/support">
             <motion.span
-              className="px-5 sm:px-6 py-3 rounded-full bg-gradient-to-r from-[#FBBF24] to-[#F59E0B] text-white text-xs sm:text-sm shadow-[0_0_24px_rgba(168,85,247,0.28)] hover:shadow-[0_0_36px_rgba(168,85,247,0.42)] transition-all cursor-pointer whitespace-nowrap"
+              className="px-5 sm:px-6 py-3 rounded-full bg-gradient-to-r from-[#FBBF24] to-[#F59E0B] text-white text-xs sm:text-sm shadow-[0_0_24px_rgba(183,104,44,0.28)] hover:shadow-[0_0_36px_rgba(183,104,44,0.42)] transition-all cursor-pointer whitespace-nowrap"
               style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
               animate={{
                 boxShadow: [

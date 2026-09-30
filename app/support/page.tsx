@@ -31,7 +31,7 @@ export default function SupportPage() {
             className="text-center mb-12"
           >
             <p
-              className="text-xs tracking-[0.4em] text-[#38bdf8] mb-2 uppercase"
+              className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
               style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Get in Touch —
@@ -55,7 +55,7 @@ export default function SupportPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             onSubmit={handleSubmit}
-            className="rounded-2xl border border-white/10 bg-[#07091a]/80 backdrop-blur-sm p-8 space-y-6"
+            className="rounded-2xl border border-white/10 bg-[#0c0c0c]/80 backdrop-blur-sm p-8 space-y-6"
           >
             <div>
               <label
@@ -69,7 +69,7 @@ export default function SupportPage() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
-                className="w-full px-4 py-3 rounded-xl bg-[#0a0d1a] border border-white/10 text-white text-sm focus:border-[#38bdf8]/50 focus:outline-none transition-colors"
+                className="w-full px-4 py-3 rounded-xl bg-[#0b0b0b] border border-white/10 text-white text-sm focus:border-[#e5a04b]/50 focus:outline-none transition-colors"
                 style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
                 placeholder="Your name"
               />
@@ -86,7 +86,7 @@ export default function SupportPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full px-4 py-3 rounded-xl bg-[#0a0d1a] border border-white/10 text-white text-sm focus:border-[#38bdf8]/50 focus:outline-none transition-colors"
+                className="w-full px-4 py-3 rounded-xl bg-[#0b0b0b] border border-white/10 text-white text-sm focus:border-[#e5a04b]/50 focus:outline-none transition-colors"
                 style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
                 placeholder="your@email.com"
               />
@@ -103,7 +103,7 @@ export default function SupportPage() {
                 onChange={(e) => setMessage(e.target.value)}
                 required
                 rows={5}
-                className="w-full px-4 py-3 rounded-xl bg-[#0a0d1a] border border-white/10 text-white text-sm focus:border-[#38bdf8]/50 focus:outline-none transition-colors resize-none"
+                className="w-full px-4 py-3 rounded-xl bg-[#0b0b0b] border border-white/10 text-white text-sm focus:border-[#e5a04b]/50 focus:outline-none transition-colors resize-none"
                 style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
                 placeholder="Tell us how you'd like to help or what you need..."
               />
@@ -113,10 +113,10 @@ export default function SupportPage() {
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="text-center py-4 rounded-xl bg-[#38bdf8]/10 border border-[#38bdf8]/30"
+                className="text-center py-4 rounded-xl bg-[#e5a04b]/10 border border-[#e5a04b]/30"
               >
                 <span
-                  className="text-[#38bdf8] text-sm"
+                  className="text-[#e5a04b] text-sm"
                   style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
                 >
                   ✓ Message sent! We&apos;ll get back to you soon.
@@ -125,7 +125,7 @@ export default function SupportPage() {
             ) : (
               <motion.button
                 type="submit"
-                className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#2563eb] to-[#1d4ed8] text-white text-sm font-semibold shadow-[0_0_25px_rgba(37,99,235,0.4)] hover:shadow-[0_0_40px_rgba(37,99,235,0.6)] transition-all duration-300"
+                className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#b7682c] to-[#8f4e25] text-white text-sm font-semibold shadow-[0_0_25px_rgba(183,104,44,0.4)] hover:shadow-[0_0_40px_rgba(183,104,44,0.6)] transition-all duration-300"
                 style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}

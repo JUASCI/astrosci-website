@@ -37,7 +37,7 @@ export default function DashboardGalleryPreview() {
 
   return (
     <section className="py-16 px-6 relative overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#38bdf8]/20 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#e5a04b]/20 to-transparent" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
@@ -49,7 +49,7 @@ export default function DashboardGalleryPreview() {
         >
           <div>
             <p
-              className="text-xs tracking-[0.4em] text-[#38bdf8] mb-2 uppercase"
+              className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
               style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Astrophotography —
@@ -63,7 +63,7 @@ export default function DashboardGalleryPreview() {
           </div>
           <Link href="/gallery">
             <motion.span
-              className="text-xs sm:text-sm text-[#38bdf8] border border-[#38bdf8]/30 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full hover:bg-[#38bdf8]/10 transition-all cursor-pointer whitespace-nowrap"
+              className="text-xs sm:text-sm text-[#e5a04b] border border-[#e5a04b]/30 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full hover:bg-[#e5a04b]/10 transition-all cursor-pointer whitespace-nowrap"
               style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
               whileHover={{ scale: 1.05 }}
             >
@@ -76,12 +76,12 @@ export default function DashboardGalleryPreview() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[...Array(3)].map((_, i) => (
               <div key={i} className="rounded-xl overflow-hidden border border-white/10 animate-pulse" style={{ aspectRatio: "4/3" }}>
-                <div className="w-full h-full bg-[#0f172a]" />
+                <div className="w-full h-full bg-[#121212]" />
               </div>
             ))}
           </div>
         ) : items.length === 0 ? (
-          <div className="rounded-xl border border-white/10 bg-[#07091a]/60 py-16 text-center">
+          <div className="rounded-xl border border-white/10 bg-[#0c0c0c]/60 py-16 text-center">
             <p
               className="text-gray-500 text-sm"
               style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
@@ -99,7 +99,7 @@ export default function DashboardGalleryPreview() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
               whileHover={{ scale: 1.03, y: -4 }}
-              className="group relative rounded-xl overflow-hidden cursor-pointer border border-white/10 hover:border-[#38bdf8]/30 transition-all"
+              className="group relative rounded-xl overflow-hidden cursor-pointer border border-white/10 hover:border-[#e5a04b]/30 transition-all"
               style={{ aspectRatio: "4/3" }}
               onClick={() => item.image_url && setFullscreenItem(item)}
             >
@@ -110,7 +110,7 @@ export default function DashboardGalleryPreview() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               ) : (
-                <div className="w-full h-full" style={{ background: "radial-gradient(ellipse at 50% 50%, #1e3a5f 0%, #020617 100%)" }}>
+                <div className="w-full h-full" style={{ background: "radial-gradient(ellipse at 50% 50%, #2a1e16 0%, #050505 100%)" }}>
                   {[...Array(20)].map((_, j) => (
                     <div
                       key={j}
@@ -127,7 +127,7 @@ export default function DashboardGalleryPreview() {
                 </div>
               )}
 
-              <div className="absolute inset-0 bg-gradient-to-t from-[#020617]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300" />
               <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <p
                   className="text-white text-sm font-bold"

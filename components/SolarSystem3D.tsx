@@ -22,14 +22,14 @@ function Sun() {
       {/* Mid glow */}
       <mesh scale={1.3}>
         <sphereGeometry args={[1, 32, 32]} />
-        <meshBasicMaterial color="#f59e0b" transparent opacity={0.12} side={THREE.BackSide} />
+        <meshBasicMaterial color="#e5a04b" transparent opacity={0.12} side={THREE.BackSide} />
       </mesh>
       {/* Sun body */}
       <mesh ref={ref}>
         <sphereGeometry args={[0.45, 48, 48]} />
         <meshStandardMaterial
           color="#fbbf24"
-          emissive="#f59e0b"
+          emissive="#e5a04b"
           emissiveIntensity={2}
           roughness={0.3}
         />
@@ -137,7 +137,7 @@ function OrbitPath({ radius }: { radius: number }) {
     return pts;
   }, [radius]);
 
-  return <Line points={points} color="#38bdf8" transparent opacity={0.08} lineWidth={1} />;
+  return <Line points={points} color="#e5a04b" transparent opacity={0.08} lineWidth={1} />;
 }
 
 /* ─── Tiny background stars ─── */
@@ -205,8 +205,8 @@ function SolarSystemScene() {
       <OrbitingPlanet
         orbitRadius={3.3}
         size={0.13}
-        color="#2563eb"
-        emissive="#1d4ed8"
+        color="#b7682c"
+        emissive="#8f4e25"
         speed={0.5}
         initialAngle={3.5}
         hasMoon
@@ -247,7 +247,7 @@ export default function SolarSystem3D() {
       <Suspense
         fallback={
           <div className="w-full h-full flex items-center justify-center">
-            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-[#f59e0b]/30 to-[#0c1e3d] animate-pulse" />
+            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-[#e5a04b]/30 to-[#0c1e3d] animate-pulse" />
           </div>
         }
       >

@@ -14,10 +14,10 @@ export default function SponsorPaymentPage() {
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse at 50% 40%, #1a1005 0%, #020617 60%)",
+              "radial-gradient(ellipse at 50% 40%, #1a1005 0%, #050505 60%)",
           }}
         />
-        <div className="absolute top-1/3 left-1/3 w-96 h-96 bg-[#f59e0b]/8 rounded-full blur-[140px] pointer-events-none" />
+        <div className="absolute top-1/3 left-1/3 w-96 h-96 bg-[#e5a04b]/8 rounded-full blur-[140px] pointer-events-none" />
 
         <SponsorshipForm />
       </section>

@@ -29,12 +29,12 @@ function getTimeLeft(): TimeLeft {
 }
 
 const TAB_META: Record<Tab, { label: string; emoji: string; color: string; gradient: string; btnGradient: string; dark: boolean }> = {
-  general: { label: "General",      emoji: "🌌", color: "#4f6ef7", gradient: "linear-gradient(135deg,#4f6ef7,#a855f7)", btnGradient: "linear-gradient(135deg,#4f6ef7,#a855f7)", dark: false },
-  pr:      { label: "📣 PR",        emoji: "📣", color: "#f472b6", gradient: "linear-gradient(135deg,#f472b6,#e11d7a)", btnGradient: "linear-gradient(135deg,#f472b6,#e11d7a)", dark: false },
-  design:  { label: "🎨 Design",    emoji: "🎨", color: "#fb923c", gradient: "linear-gradient(135deg,#fb923c,#f59e0b)", btnGradient: "linear-gradient(135deg,#fb923c,#f59e0b)", dark: true  },
-  tech:    { label: "⚡ Tech",      emoji: "⚡", color: "#38bdf8", gradient: "linear-gradient(135deg,#38bdf8,#0ea5e9)", btnGradient: "linear-gradient(135deg,#38bdf8,#0ea5e9)", dark: true  },
-  video:   { label: "🎬 Video",     emoji: "🎬", color: "#4ade80", gradient: "linear-gradient(135deg,#4ade80,#22c55e)", btnGradient: "linear-gradient(135deg,#4ade80,#22c55e)", dark: true  },
-  content: { label: "✍️ Content",   emoji: "✍️", color: "#c084fc", gradient: "linear-gradient(135deg,#c084fc,#a855f7)", btnGradient: "linear-gradient(135deg,#c084fc,#a855f7)", dark: false },
+  general: { label: "General",      emoji: "🌌", color: "#4f6ef7", gradient: "linear-gradient(135deg,#4f6ef7,#b7682c)", btnGradient: "linear-gradient(135deg,#4f6ef7,#b7682c)", dark: false },
+  pr:      { label: "📣 PR",        emoji: "📣", color: "#e5a04b", gradient: "linear-gradient(135deg,#e5a04b,#e11d7a)", btnGradient: "linear-gradient(135deg,#e5a04b,#e11d7a)", dark: false },
+  design:  { label: "🎨 Design",    emoji: "🎨", color: "#c87938", gradient: "linear-gradient(135deg,#c87938,#e5a04b)", btnGradient: "linear-gradient(135deg,#c87938,#e5a04b)", dark: true  },
+  tech:    { label: "⚡ Tech",      emoji: "⚡", color: "#e5a04b", gradient: "linear-gradient(135deg,#e5a04b,#0ea5e9)", btnGradient: "linear-gradient(135deg,#e5a04b,#0ea5e9)", dark: true  },
+  video:   { label: "🎬 Video",     emoji: "🎬", color: "#c87938", gradient: "linear-gradient(135deg,#c87938,#c87938)", btnGradient: "linear-gradient(135deg,#c87938,#c87938)", dark: true  },
+  content: { label: "✍️ Content",   emoji: "✍️", color: "#f2b866", gradient: "linear-gradient(135deg,#f2b866,#b7682c)", btnGradient: "linear-gradient(135deg,#f2b866,#b7682c)", dark: false },
 };
 
 const TABS: Tab[] = ["general", "pr", "design", "tech", "video", "content"];
@@ -42,7 +42,7 @@ const TABS: Tab[] = ["general", "pr", "design", "tech", "video", "content"];
 const CSS = `
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=DM+Sans:wght@300;400;500;600&display=swap');
 
-.rc-root { --space:#03040d;--deep:#080b1a;--surface:#0d1128;--card:#101530;--border:#1e2545;--border-glow:#2a3570;--nebula1:#4f6ef7;--nebula2:#a855f7;--nebula3:#06b6d4;--star:#e2e8ff;--muted:#5a6490;--input-bg:#090c1f;--gold:#f0b429; }
+.rc-root { --space:#03040d;--deep:#080b1a;--surface:#0d1128;--card:#101530;--border:#1e2545;--border-glow:#4a3524;--nebula1:#4f6ef7;--nebula2:#b7682c;--nebula3:#e5a04b;--star:#e2e8ff;--muted:#8d8175;--input-bg:#090c1f;--gold:#f0b429; }
 
 /* ── STARS ── */
 .rc-stars { position:fixed;inset:0;z-index:0;pointer-events:none; }
@@ -76,7 +76,7 @@ const CSS = `
 /* spinning logo */
 .rc-logo-ring {
   width:80px;height:80px;border-radius:50%;
-  background:conic-gradient(from 0deg,#4f6ef7,#a855f7,#f472b6,#fb923c,#4ade80,#06b6d4,#4f6ef7);
+  background:conic-gradient(from 0deg,#4f6ef7,#b7682c,#e5a04b,#c87938,#c87938,#e5a04b,#4f6ef7);
   padding:3px;
   animation:rcSpin 12s linear infinite;
   margin-bottom:24px;flex-shrink:0;
@@ -91,26 +91,26 @@ const CSS = `
 /* eyebrow */
 .rc-eyebrow {
   font-family:'Orbitron',monospace;font-size:9px;letter-spacing:6px;
-  color:#06b6d4;text-transform:uppercase;margin-bottom:14px;
+  color:#e5a04b;text-transform:uppercase;margin-bottom:14px;
 }
 
 /* main title */
 .rc-title {
   font-family:'Orbitron',monospace;
   font-size:clamp(2rem,6vw,4rem);font-weight:900;line-height:1.05;
-  background:linear-gradient(135deg,#fff 10%,#a5b4fc 40%,#f472b6 65%,#fb923c 85%);
+  background:linear-gradient(135deg,#fff 10%,#f6d39a 40%,#e5a04b 65%,#c87938 85%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
   margin-bottom:10px;
 }
 .rc-subtitle {
   font-family:'Orbitron',monospace;font-size:10px;
-  letter-spacing:3px;color:#5a6490;margin-bottom:36px;
+  letter-spacing:3px;color:#8d8175;margin-bottom:36px;
 }
 
 /* ── COLORFUL BANNER STRIP ── */
 .rc-rainbow-strip {
   width:100%;height:4px;
-  background:linear-gradient(90deg,#4f6ef7,#a855f7,#f472b6,#fb923c,#f59e0b,#4ade80,#06b6d4,#4f6ef7);
+  background:linear-gradient(90deg,#4f6ef7,#b7682c,#e5a04b,#c87938,#e5a04b,#c87938,#e5a04b,#4f6ef7);
   background-size:200% 100%;
   animation:rcRainbow 4s linear infinite;
 }
@@ -144,11 +144,11 @@ const CSS = `
 }
 .rc-timer-lbl {
   font-family:'Orbitron',monospace;font-size:8px;letter-spacing:2px;
-  color:#5a6490;margin-top:6px;
+  color:#8d8175;margin-top:6px;
 }
 .rc-timer-sep {
   font-family:'Orbitron',monospace;font-size:24px;font-weight:900;
-  color:#2a3570;line-height:1;padding-bottom:16px;
+  color:#4a3524;line-height:1;padding-bottom:16px;
 }
 .rc-expired-badge {
   font-family:'Orbitron',monospace;font-size:13px;letter-spacing:3px;
@@ -157,9 +157,9 @@ const CSS = `
 }
 .rc-date-pill {
   display:inline-flex;align-items:center;gap:8px;
-  background:#090c1f;border:1px solid #2a3570;
+  background:#090c1f;border:1px solid #4a3524;
   padding:8px 20px;border-radius:50px;
-  font-family:'Orbitron',monospace;font-size:10px;color:#5a6490;
+  font-family:'Orbitron',monospace;font-size:10px;color:#8d8175;
   letter-spacing:2px;
 }
 .rc-date-pill strong { color:#f0b429; }
@@ -192,7 +192,7 @@ const CSS = `
   background:none;border:none;
   padding:14px 16px;
   font-family:'Orbitron',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;
-  color:#5a6490;cursor:pointer;
+  color:#8d8175;cursor:pointer;
   border-bottom:2px solid transparent;
   white-space:nowrap;transition:all 0.2s;
   position:relative;top:1px;
@@ -214,7 +214,7 @@ const CSS = `
   display:flex;align-items:center;justify-content:center;font-size:22px;
 }
 .rc-s-title h2 {font-family:'Orbitron',monospace;font-size:18px;font-weight:800;letter-spacing:1px;}
-.rc-s-title p {font-size:11px;color:#5a6490;font-family:'Orbitron',monospace;letter-spacing:1.5px;margin-top:4px;}
+.rc-s-title p {font-size:11px;color:#8d8175;font-family:'Orbitron',monospace;letter-spacing:1.5px;margin-top:4px;}
 
 /* ── CARDS ── */
 .rc-card {
@@ -223,7 +223,7 @@ const CSS = `
 }
 .rc-card-label {
   font-family:'Orbitron',monospace;font-size:9px;letter-spacing:3px;
-  color:#5a6490;text-transform:uppercase;margin-bottom:20px;
+  color:#8d8175;text-transform:uppercase;margin-bottom:20px;
 }
 
 /* ── FIELDS ── */
@@ -232,10 +232,10 @@ const CSS = `
 .rc-field { display:flex;flex-direction:column;gap:8px; }
 .rc-field.full { grid-column:1/-1; }
 .rc-label {
-  font-size:11px;font-weight:600;color:#5a6490;letter-spacing:0.5px;
+  font-size:11px;font-weight:600;color:#8d8175;letter-spacing:0.5px;
   font-family:'Orbitron',monospace;
 }
-.rc-label .req { color:#f472b6;margin-left:2px; }
+.rc-label .req { color:#e5a04b;margin-left:2px; }
 input[type=text].rc-inp,input[type=number].rc-inp,input[type=email].rc-inp,textarea.rc-inp,select.rc-inp {
   background:#090c1f;border:1px solid #1e2545;border-radius:10px;
   color:#e2e8ff;font-family:'DM Sans',sans-serif;font-size:14px;
@@ -254,8 +254,8 @@ select.rc-inp option { background:#0d1128; }
   border-radius:14px;padding:22px;margin-bottom:12px;
   transition:border-color 0.2s;
 }
-.rc-qcard:focus-within { border-color:#2a3570; }
-.rc-qnum { font-family:'Orbitron',monospace;font-size:9px;color:#5a6490;letter-spacing:3px;margin-bottom:8px; }
+.rc-qcard:focus-within { border-color:#4a3524; }
+.rc-qnum { font-family:'Orbitron',monospace;font-size:9px;color:#8d8175;letter-spacing:3px;margin-bottom:8px; }
 .rc-qtitle { font-size:14px;font-weight:600;margin-bottom:14px;line-height:1.5;color:#e2e8ff; }
 .rc-qweight { font-size:10px;font-weight:400;color:#f0b429;margin-left:6px; }
 
@@ -276,7 +276,7 @@ select.rc-inp option { background:#0d1128; }
 /* ── DIVIDER ── */
 .rc-div { display:flex;align-items:center;gap:10px;margin:18px 0; }
 .rc-div::before,.rc-div::after { content:'';flex:1;height:1px;background:#1e2545; }
-.rc-div span { font-family:'Orbitron',monospace;font-size:9px;color:#5a6490;letter-spacing:3px; }
+.rc-div span { font-family:'Orbitron',monospace;font-size:9px;color:#8d8175;letter-spacing:3px; }
 
 /* ── NOTE ── */
 .rc-note {
@@ -295,7 +295,7 @@ select.rc-inp option { background:#0d1128; }
 }
 .rc-fsnotice .icon { font-size:18px;flex-shrink:0;margin-top:2px; }
 .rc-fsnotice .text { font-size:12px;line-height:1.7; }
-.rc-fsnotice .text strong { color:#06b6d4;font-family:'Orbitron',monospace;font-size:10px;letter-spacing:1px; }
+.rc-fsnotice .text strong { color:#e5a04b;font-family:'Orbitron',monospace;font-size:10px;letter-spacing:1px; }
 .rc-fsnotice .text code { background:#1a2240;padding:2px 6px;border-radius:4px;font-size:11px;color:#f0b429; }
 
 /* ── SUBMIT ── */
@@ -316,7 +316,7 @@ select.rc-inp option { background:#0d1128; }
 .rc-success-icon { font-size:52px;margin-bottom:16px;animation:rcPulse 2s ease infinite; }
 @keyframes rcPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
 .rc-success h3 { font-family:'Orbitron',monospace;font-size:18px;font-weight:800;margin-bottom:8px; }
-.rc-success p { font-size:14px;color:#5a6490; }
+.rc-success p { font-size:14px;color:#8d8175; }
 
 /* ── TOAST ── */
 .rc-toast {
@@ -327,7 +327,7 @@ select.rc-inp option { background:#0d1128; }
   animation:rcToastIn 0.3s ease;
 }
 @keyframes rcToastIn{from{opacity:0;transform:translateX(-50%) translateY(8px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
-.rc-toast.success{background:#0d1f0d;border:1px solid #22543d;color:#4ade80;}
+.rc-toast.success{background:#0d1f0d;border:1px solid #22543d;color:#c87938;}
 .rc-toast.error{background:#2a0a0a;border:1px solid #7a2020;color:#f87171;}
 
 /* responsive timer */
@@ -440,10 +440,10 @@ export default function RecruitmentPage() {
             ) : (
               <div className="rc-countdown">
                 {[
-                  { val: timeLeft.days,    lbl: "DAYS",    color: "#f472b6" },
-                  { val: timeLeft.hours,   lbl: "HOURS",   color: "#fb923c" },
+                  { val: timeLeft.days,    lbl: "DAYS",    color: "#e5a04b" },
+                  { val: timeLeft.hours,   lbl: "HOURS",   color: "#c87938" },
                   { val: timeLeft.minutes, lbl: "MINS",    color: "#4f6ef7" },
-                  { val: timeLeft.seconds, lbl: "SECS",    color: "#4ade80" },
+                  { val: timeLeft.seconds, lbl: "SECS",    color: "#c87938" },
                 ].map((b, i) => (
                   <>
                     <div key={b.lbl} className="rc-timer-block" style={{ "--tb-color": b.color } as React.CSSProperties}>
@@ -463,11 +463,11 @@ export default function RecruitmentPage() {
             {/* promo badges */}
             <div className="rc-badge-row">
               {[
-                { text: "PR Team",      color: "#f472b6", bg: "#f472b611" },
-                { text: "Design Team",  color: "#fb923c", bg: "#fb923c11" },
-                { text: "Tech Team",    color: "#38bdf8", bg: "#38bdf811" },
-                { text: "Video Team",   color: "#4ade80", bg: "#4ade8011" },
-                { text: "Content Team", color: "#c084fc", bg: "#c084fc11" },
+                { text: "PR Team",      color: "#e5a04b", bg: "#e5a04b11" },
+                { text: "Design Team",  color: "#c87938", bg: "#c8793811" },
+                { text: "Tech Team",    color: "#e5a04b", bg: "#e5a04b11" },
+                { text: "Video Team",   color: "#c87938", bg: "#c8793811" },
+                { text: "Content Team", color: "#f2b866", bg: "#f2b86611" },
               ].map(b => (
                 <span key={b.text} className="rc-badge" style={{ color: b.color, background: b.bg, borderColor: b.color + "44" }}>
                   {b.text}
@@ -582,7 +582,7 @@ export default function RecruitmentPage() {
           {/* ══════ PR ══════ */}
           <div className={`rc-section${activeTab === "pr" ? " active" : ""}`}>
             <div className="rc-section-header">
-              <div className="rc-s-icon" style={{ background: "linear-gradient(135deg,#f472b620,#f472b640)", border: "1px solid #f472b655" }}>📣</div>
+              <div className="rc-s-icon" style={{ background: "linear-gradient(135deg,#e5a04b20,#e5a04b40)", border: "1px solid #e5a04b55" }}>📣</div>
               <div className="rc-s-title"><h2>PR Team</h2><p>Outreach · Social Media · Reels</p></div>
             </div>
 
@@ -691,7 +691,7 @@ export default function RecruitmentPage() {
           {/* ══════ DESIGN ══════ */}
           <div className={`rc-section${activeTab === "design" ? " active" : ""}`}>
             <div className="rc-section-header">
-              <div className="rc-s-icon" style={{ background: "linear-gradient(135deg,#fb923c20,#fb923c40)", border: "1px solid #fb923c55" }}>🎨</div>
+              <div className="rc-s-icon" style={{ background: "linear-gradient(135deg,#c8793820,#c8793840)", border: "1px solid #c8793855" }}>🎨</div>
               <div className="rc-s-title"><h2>Design Team</h2><p>Graphics · Astrophotography · Visual Identity</p></div>
             </div>
 
@@ -803,7 +803,7 @@ export default function RecruitmentPage() {
           {/* ══════ TECH ══════ */}
           <div className={`rc-section${activeTab === "tech" ? " active" : ""}`}>
             <div className="rc-section-header">
-              <div className="rc-s-icon" style={{ background: "linear-gradient(135deg,#38bdf820,#38bdf840)", border: "1px solid #38bdf855" }}>⚡</div>
+              <div className="rc-s-icon" style={{ background: "linear-gradient(135deg,#e5a04b20,#e5a04b40)", border: "1px solid #e5a04b55" }}>⚡</div>
               <div className="rc-s-title"><h2>Tech Team</h2><p>ML · CV · Development · AI Tools</p></div>
             </div>
 
@@ -930,7 +930,7 @@ export default function RecruitmentPage() {
           {/* ══════ VIDEO ══════ */}
           <div className={`rc-section${activeTab === "video" ? " active" : ""}`}>
             <div className="rc-section-header">
-              <div className="rc-s-icon" style={{ background: "linear-gradient(135deg,#4ade8020,#4ade8040)", border: "1px solid #4ade8055" }}>🎬</div>
+              <div className="rc-s-icon" style={{ background: "linear-gradient(135deg,#c8793820,#c8793840)", border: "1px solid #c8793855" }}>🎬</div>
               <div className="rc-s-title"><h2>Video Editing</h2><p>Reels · Event Films · Timelapse · Motion</p></div>
             </div>
 
@@ -1045,7 +1045,7 @@ export default function RecruitmentPage() {
           {/* ══════ CONTENT ══════ */}
           <div className={`rc-section${activeTab === "content" ? " active" : ""}`}>
             <div className="rc-section-header">
-              <div className="rc-s-icon" style={{ background: "linear-gradient(135deg,#c084fc20,#c084fc40)", border: "1px solid #c084fc55" }}>✍️</div>
+              <div className="rc-s-icon" style={{ background: "linear-gradient(135deg,#f2b86620,#f2b86640)", border: "1px solid #f2b86655" }}>✍️</div>
               <div className="rc-s-title"><h2>Content Team</h2><p>Writing · Research · Astro Storytelling</p></div>
             </div>
 

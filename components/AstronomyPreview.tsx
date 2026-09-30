@@ -8,7 +8,7 @@ import AstronomicalCalendarWidget from "@/components/AstronomicalCalendarWidget"
 export default function AstronomyPreview() {
   return (
     <section className="py-16 px-6 relative overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#38bdf8]/20 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#e5a04b]/20 to-transparent" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
@@ -20,7 +20,7 @@ export default function AstronomyPreview() {
         >
           <div>
             <p
-              className="text-xs tracking-[0.4em] text-[#38bdf8] mb-2 uppercase"
+              className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
               style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
             >
               — Astronomy Tools —
@@ -34,7 +34,7 @@ export default function AstronomyPreview() {
           </div>
           <Link href="/astronomy">
             <motion.span
-              className="text-xs sm:text-sm text-[#38bdf8] border border-[#38bdf8]/30 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full hover:bg-[#38bdf8]/10 transition-all cursor-pointer whitespace-nowrap"
+              className="text-xs sm:text-sm text-[#e5a04b] border border-[#e5a04b]/30 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full hover:bg-[#e5a04b]/10 transition-all cursor-pointer whitespace-nowrap"
               style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
               whileHover={{ scale: 1.05 }}
             >

@@ -51,7 +51,7 @@ export default function NasaApodPage() {
             className="text-center mb-12"
           >
             <p
-              className="text-xs tracking-[0.4em] text-[#38bdf8] mb-2 uppercase"
+              className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
               style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
             >
               — NASA —
@@ -66,7 +66,7 @@ export default function NasaApodPage() {
 
           {loading ? (
             <div className="text-center py-20">
-              <div className="w-12 h-12 rounded-full border-2 border-[#38bdf8]/30 border-t-[#38bdf8] animate-spin mx-auto" />
+              <div className="w-12 h-12 rounded-full border-2 border-[#e5a04b]/30 border-t-[#e5a04b] animate-spin mx-auto" />
               <p
                 className="text-gray-500 text-sm mt-4"
                 style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
@@ -79,7 +79,7 @@ export default function NasaApodPage() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="rounded-2xl overflow-hidden border border-[#38bdf8]/20 bg-[#07091a]/80 backdrop-blur-sm"
+              className="rounded-2xl overflow-hidden border border-[#e5a04b]/20 bg-[#0c0c0c]/80 backdrop-blur-sm"
             >
               {apod.media_type === "image" ? (
                 <div className="relative overflow-hidden cursor-pointer" onClick={() => setFullscreenOpen(true)}>
@@ -107,7 +107,7 @@ export default function NasaApodPage() {
                   {apod.title}
                 </h2>
                 <p
-                  className="text-[#38bdf8] text-sm mb-4"
+                  className="text-[#e5a04b] text-sm mb-4"
                   style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
                 >
                   {new Date(apod.date).toLocaleDateString("en-IN", {
@@ -126,7 +126,7 @@ export default function NasaApodPage() {
                   href="https://apod.nasa.gov/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-[#38bdf8]/40 text-[#38bdf8] text-sm hover:bg-[#38bdf8]/10 hover:shadow-[0_0_20px_rgba(56,189,248,0.3)] transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-[#e5a04b]/40 text-[#e5a04b] text-sm hover:bg-[#e5a04b]/10 hover:shadow-[0_0_20px_rgba(229,160,75,0.3)] transition-all duration-300"
                   style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
                   whileHover={{ scale: 1.04 }}
                   whileTap={{ scale: 0.97 }}
@@ -136,7 +136,7 @@ export default function NasaApodPage() {
               </div>
             </motion.div>
           ) : (
-            <div className="text-center py-20 rounded-2xl border border-white/10 bg-[#07091a]/80 backdrop-blur-sm">
+            <div className="text-center py-20 rounded-2xl border border-white/10 bg-[#0c0c0c]/80 backdrop-blur-sm">
               <p
                 className="text-gray-500 text-sm"
                 style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
@@ -147,7 +147,7 @@ export default function NasaApodPage() {
                 href="https://apod.nasa.gov/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 px-6 py-2 rounded-full border border-[#38bdf8]/30 text-[#38bdf8] text-sm hover:bg-[#38bdf8]/10 transition-all"
+                className="inline-block mt-4 px-6 py-2 rounded-full border border-[#e5a04b]/30 text-[#e5a04b] text-sm hover:bg-[#e5a04b]/10 transition-all"
                 style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
                 whileHover={{ scale: 1.04 }}
               >

@@ -85,7 +85,7 @@ export default function StarBackground() {
 
         ctx.beginPath();
         ctx.arc(s.x, drawY, s.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(165,243,252,${alpha * 0.8})`;
+        ctx.fillStyle = `rgba(229,160,75,${alpha * 0.8})`;
         ctx.fill();
       });
 
@@ -112,8 +112,8 @@ export default function StarBackground() {
         const tailY = ss.y - Math.sin(ss.angle) * ss.length;
 
         const gradient = ctx.createLinearGradient(tailX, tailY, ss.x, ss.y);
-        gradient.addColorStop(0, `rgba(165,243,252,0)`);
-        gradient.addColorStop(1, `rgba(165,243,252,${ss.opacity})`);
+        gradient.addColorStop(0, `rgba(229,160,75,0)`);
+        gradient.addColorStop(1, `rgba(229,160,75,${ss.opacity})`);
 
         ctx.beginPath();
         ctx.moveTo(tailX, tailY);

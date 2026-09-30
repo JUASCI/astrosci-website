@@ -3,10 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --bg-space: #020617;
-  --accent-blue: #2563eb;
-  --accent-orbit: #38bdf8;
-  --accent-green: #10b981;
+  --bg-space: #050505;
+  --bg-panel: #0c0c0c;
+  --bg-panel-raised: #121212;
+  --line: rgba(255, 255, 255, 0.14);
+  --line-soft: rgba(255, 255, 255, 0.08);
+  --ink: #f5f1eb;
+  --muted: #978f86;
+  --accent: #e5a04b;
+  --accent-bright: #f6c47d;
+  --accent-deep: #8f4e25;
 }
 
 * {
@@ -17,25 +23,84 @@
 
 html {
   scroll-behavior: smooth;
+  background: var(--bg-space);
 }
 
 body {
-  background-color: var(--bg-space);
-  color: white;
+  min-width: 320px;
+  background: var(--bg-space);
+  color: var(--ink);
   font-family: "Public Sans", "Inter", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #020617; }
-::-webkit-scrollbar-thumb { background: #2563eb40; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #2563eb80; }
+::selection {
+  background: rgba(229, 160, 75, 0.28);
+  color: #fff8ef;
+}
+
+::-webkit-scrollbar { width: 7px; }
+::-webkit-scrollbar-track { background: #050505; }
+::-webkit-scrollbar-thumb { background: rgba(229, 160, 75, 0.42); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(246, 196, 125, 0.7); }
+
+/* Shared observatory rhythm: each content section reads as a considered field note. */
+section.py-16.px-6,
+section.pt-28.pb-16.px-6 {
+  position: relative;
+}
+
+section.py-16.px-6::before,
+section.pt-28.pb-16.px-6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line), transparent);
+  pointer-events: none;
+}
+
+/* Re-map legacy surfaces without changing component behavior or data flows. */
+[class*="bg-[#0c0c0c]"],
+[class*="bg-[#121212]"],
+[class*="bg-[#0b0b0b]"],
+[class*="bg-[#11100e]"] {
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.025), 0 18px 60px rgba(0, 0, 0, 0.16);
+}
+
+/* Keep the new system legible on every route, including older feature surfaces. */
+[class*="border-white/10"],
+[class*="border-white/5"] { border-color: var(--line-soft) !important; }
+[class*="text-gray-500"],
+[class*="text-gray-600"],
+[class*="text-slate-400"] { color: var(--muted) !important; }
+
+input, textarea, select {
+  color-scheme: dark;
+}
+
+input:focus, textarea:focus, select:focus, button:focus-visible, a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
 
 @keyframes glow-pulse {
-  0%, 100% { box-shadow: 0 0 20px rgba(37, 99, 235, 0.3); }
-  50% { box-shadow: 0 0 40px rgba(37, 99, 235, 0.6); }
+  0%, 100% { box-shadow: 0 0 18px rgba(229, 160, 75, 0.18); }
+  50% { box-shadow: 0 0 34px rgba(229, 160, 75, 0.38); }
 }
 
 .glow-blue {
   animation: glow-pulse 3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

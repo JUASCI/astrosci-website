@@ -379,9 +379,9 @@ export default function ConstellationMap2D() {
 
       // background gradient
       const grad = ctx.createLinearGradient(0, 0, 0, H);
-      grad.addColorStop(0, "#020617");
+      grad.addColorStop(0, "#050505");
       grad.addColorStop(0.5, "#0a0f2e");
-      grad.addColorStop(1, "#020617");
+      grad.addColorStop(1, "#050505");
       ctx.fillStyle = grad;
       ctx.fillRect(0, 0, W, H);
 

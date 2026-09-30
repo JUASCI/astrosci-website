@@ -104,7 +104,7 @@ export default function ProfilePage() {
             className="text-center mb-10"
           >
             <p
-              className="text-xs tracking-[0.4em] text-[#38bdf8] mb-2 uppercase"
+              className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase"
               style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
             >
               — {greeting} —
@@ -121,7 +121,7 @@ export default function ProfilePage() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="rounded-2xl border border-white/10 bg-[#07091a]/80 backdrop-blur-sm p-8"
+            className="rounded-2xl border border-white/10 bg-[#0c0c0c]/80 backdrop-blur-sm p-8"
           >
             {/* Profile Image Upload */}
             <ProfileImageUpload
@@ -151,7 +151,7 @@ export default function ProfilePage() {
               <div className="flex justify-center mb-6">
                 <motion.button
                   onClick={() => setEditing(true)}
-                  className="flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium border border-[#2563eb]/60 text-[#38bdf8] hover:bg-[#2563eb]/20 hover:border-[#2563eb] transition-all duration-300"
+                  className="flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium border border-[#b7682c]/60 text-[#e5a04b] hover:bg-[#b7682c]/20 hover:border-[#b7682c] transition-all duration-300"
                   style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.97 }}

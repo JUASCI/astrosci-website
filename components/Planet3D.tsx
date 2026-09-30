@@ -26,7 +26,7 @@ function Planet() {
       <mesh ref={glowRef} scale={1.25}>
         <sphereGeometry args={[1, 32, 32]} />
         <meshBasicMaterial
-          color="#2563eb"
+          color="#b7682c"
           transparent
           opacity={0.08}
           side={THREE.BackSide}
@@ -37,7 +37,7 @@ function Planet() {
       <mesh scale={1.15}>
         <sphereGeometry args={[1, 32, 32]} />
         <meshBasicMaterial
-          color="#38bdf8"
+          color="#e5a04b"
           transparent
           opacity={0.05}
           side={THREE.BackSide}
@@ -58,7 +58,7 @@ function Planet() {
       {/* Lighting */}
       <ambientLight intensity={0.3} />
       <directionalLight position={[3, 2, 5]} intensity={1.2} color="#a78bfa" />
-      <pointLight position={[-3, -1, 2]} intensity={0.6} color="#38bdf8" />
+      <pointLight position={[-3, -1, 2]} intensity={0.6} color="#e5a04b" />
     </group>
   );
 }
@@ -69,7 +69,7 @@ export default function Planet3D() {
       <Suspense
         fallback={
           <div className="w-full h-full flex items-center justify-center">
-            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-[#2563eb]/30 to-[#0c1e3d] animate-pulse" />
+            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-[#b7682c]/30 to-[#0c1e3d] animate-pulse" />
           </div>
         }
       >

@@ -2,18 +2,18 @@
 import { motion } from "framer-motion";
 
 const galleryItems = [
-  { title: "Orion Nebula", photographer: "Priya Sen", gradient: "radial-gradient(ellipse at 40% 50%, #1e40af 0%, #0c1e3d 40%, #020617 100%)", glow: "#3b82f6", tag: "Nebula" },
-  { title: "Andromeda Galaxy", photographer: "Arjun Bose", gradient: "radial-gradient(ellipse at 60% 40%, #065f46 0%, #022c22 50%, #020617 100%)", glow: "#34d399", tag: "Galaxy" },
-  { title: "Saturn Transit", photographer: "Sneha Das", gradient: "radial-gradient(ellipse at 50% 60%, #78350f 0%, #3b1a09 50%, #020617 100%)", glow: "#f59e0b", tag: "Planets" },
-  { title: "Milky Way Core", photographer: "Ravi Chatterjee", gradient: "radial-gradient(ellipse at 50% 40%, #1e3a5f 0%, #2d1b69 30%, #020617 80%)", glow: "#2563eb", tag: "Milky Way" },
-  { title: "Lunar Eclipse", photographer: "Mita Roy", gradient: "radial-gradient(ellipse at 45% 45%, #7f1d1d 0%, #450a0a 50%, #020617 100%)", glow: "#ef4444", tag: "Moon" },
-  { title: "Pleiades Cluster", photographer: "Dibya Ghosh", gradient: "radial-gradient(ellipse at 55% 40%, #164e63 0%, #0c4a6e 40%, #020617 100%)", glow: "#38bdf8", tag: "Star Cluster" },
+  { title: "Orion Nebula", photographer: "Priya Sen", gradient: "radial-gradient(ellipse at 40% 50%, #1e40af 0%, #0c1e3d 40%, #050505 100%)", glow: "#3b82f6", tag: "Nebula" },
+  { title: "Andromeda Galaxy", photographer: "Arjun Bose", gradient: "radial-gradient(ellipse at 60% 40%, #065f46 0%, #022c22 50%, #050505 100%)", glow: "#c87938", tag: "Galaxy" },
+  { title: "Saturn Transit", photographer: "Sneha Das", gradient: "radial-gradient(ellipse at 50% 60%, #78350f 0%, #3b1a09 50%, #050505 100%)", glow: "#e5a04b", tag: "Planets" },
+  { title: "Milky Way Core", photographer: "Ravi Chatterjee", gradient: "radial-gradient(ellipse at 50% 40%, #2a1e16 0%, #2d1b69 30%, #050505 80%)", glow: "#b7682c", tag: "Milky Way" },
+  { title: "Lunar Eclipse", photographer: "Mita Roy", gradient: "radial-gradient(ellipse at 45% 45%, #7f1d1d 0%, #450a0a 50%, #050505 100%)", glow: "#ef4444", tag: "Moon" },
+  { title: "Pleiades Cluster", photographer: "Dibya Ghosh", gradient: "radial-gradient(ellipse at 55% 40%, #164e63 0%, #0c4a6e 40%, #050505 100%)", glow: "#e5a04b", tag: "Star Cluster" },
 ];
 
 export default function GalleryPreview() {
   return (
-    <section id="gallery" className="py-24 px-6 relative overflow-hidden bg-[#020617]">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#38bdf8]/20 to-transparent" />
+    <section id="gallery" className="py-24 px-6 relative overflow-hidden bg-[#050505]">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#e5a04b]/20 to-transparent" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
@@ -24,7 +24,7 @@ export default function GalleryPreview() {
           className="flex flex-col md:flex-row items-start justify-between mb-12 gap-4"
         >
           <div>
-            <p className="text-xs tracking-[0.4em] text-[#38bdf8] mb-2 uppercase" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
+            <p className="text-xs tracking-[0.4em] text-[#e5a04b] mb-2 uppercase" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
               — Astrophotography —
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>GALLERY PREVIEW</h2>
@@ -32,7 +32,7 @@ export default function GalleryPreview() {
           </div>
           <motion.a
             href="#gallery"
-            className="text-sm text-[#38bdf8] border-b border-[#38bdf8]/40 hover:border-[#38bdf8] transition-colors pb-1 whitespace-nowrap"
+            className="text-sm text-[#e5a04b] border-b border-[#e5a04b]/40 hover:border-[#e5a04b] transition-colors pb-1 whitespace-nowrap"
             style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
             whileHover={{ x: 4 }}
           >
@@ -73,7 +73,7 @@ export default function GalleryPreview() {
               </div>
 
               {/* Hover overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-[#020617]/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <div className="flex items-end justify-between">
                     <div>
@@ -111,7 +111,7 @@ export default function GalleryPreview() {
           className="text-center mt-10"
         >
           <motion.button
-            className="px-6 py-3 sm:px-10 sm:py-4 rounded-full border border-[#38bdf8]/30 text-[#38bdf8] text-xs sm:text-sm font-medium hover:bg-[#38bdf8]/10 hover:border-[#38bdf8]/60 hover:shadow-[0_0_30px_rgba(56,189,248,0.2)] transition-all duration-300"
+            className="px-6 py-3 sm:px-10 sm:py-4 rounded-full border border-[#e5a04b]/30 text-[#e5a04b] text-xs sm:text-sm font-medium hover:bg-[#e5a04b]/10 hover:border-[#e5a04b]/60 hover:shadow-[0_0_30px_rgba(229,160,75,0.2)] transition-all duration-300"
             style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
