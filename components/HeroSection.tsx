@@ -1,164 +1,114 @@
 "use client";
-import dynamic from "next/dynamic";
-import { motion } from "framer-motion";
-import { siteConfig } from "@/config/siteConfig";
 
-const SolarSystem3D = dynamic(() => import("@/components/SolarSystem3D"), {
-  ssr: false,
-  loading: () => (
-    <div className="w-full h-full flex items-center justify-center">
-      <div className="w-32 h-32 rounded-full bg-gradient-to-br from-[#f59e0b]/30 to-[#0c1e3d] animate-pulse" />
-    </div>
-  ),
-});
+import { motion } from "framer-motion";
+import { ArrowDownRight, MoveUpRight } from "lucide-react";
+import { siteConfig } from "@/config/siteConfig";
+import BlackHole from "@/components/ui/black-hole";
 
 export default function HeroSection() {
   return (
-    <section
-      id="home"
-      className="relative min-h-screen flex items-center overflow-hidden"
-      style={{ background: "radial-gradient(ellipse at 50% 60%, #0a1628 0%, #020617 60%)" }}
-    >
-      {/* Nebula glows */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#2563eb]/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-[#38bdf8]/8 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#2563eb]/5 rounded-full blur-[160px] pointer-events-none" />
-
-      {/* Grid overlay */}
+    <section id="home" className="relative isolate min-h-[100dvh] overflow-hidden bg-[#050505]">
+      <div className="absolute inset-0 z-0 opacity-90" aria-hidden="true">
+        <BlackHole />
+      </div>
+      <div className="absolute inset-0 z-[1] bg-[radial-gradient(circle_at_55%_48%,transparent_0%,rgba(5,5,5,0.12)_35%,rgba(5,5,5,0.84)_100%)]" aria-hidden="true" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-[#050505]/25 via-transparent to-[#050505]" aria-hidden="true" />
       <div
-        className="absolute inset-0 pointer-events-none opacity-[0.04]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(56,189,248,1) 1px, transparent 1px), linear-gradient(90deg, rgba(56,189,248,1) 1px, transparent 1px)",
-          backgroundSize: "80px 80px",
-        }}
+        className="absolute inset-0 z-[1] opacity-[0.08] [background-image:linear-gradient(rgba(255,255,255,0.55)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.55)_1px,transparent_1px)] [background-size:96px_96px]"
+        aria-hidden="true"
       />
 
-      {/* Content - Left/Right Split */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center pt-24 lg:pt-0">
-        {/* Left side: Text content */}
-        <div className="text-center lg:text-left">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex items-center justify-center lg:justify-start gap-3 mb-6"
-          >
-            <span className="h-px w-12 bg-gradient-to-r from-transparent to-[#2563eb]" />
-            <span className="text-xs tracking-[0.4em] text-[#38bdf8] uppercase" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>
-              {siteConfig.university}
-            </span>
-            <span className="h-px w-12 bg-gradient-to-l from-transparent to-[#2563eb]" />
-          </motion.div>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.4 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-black leading-none mb-6 tracking-tight"
-            style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
-          >
-            <span className="bg-gradient-to-b from-white via-white to-gray-400 bg-clip-text text-transparent">ASTRO</span>
-            <span className="bg-gradient-to-br from-[#2563eb] to-[#10b981] bg-clip-text text-transparent">SCI</span>
-            <br />
-            <span className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-400 tracking-widest">CLUB</span>
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.7 }}
-            className="text-gray-400 text-base md:text-lg max-w-xl mb-10 leading-relaxed mx-auto lg:mx-0"
-            style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}
-          >
-            A community exploring the universe through observation, research, and curiosity.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.9 }}
-            className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
-          >
-            <motion.a
-              href="/auth?tab=signup"
-              className="group relative px-6 sm:px-8 py-4 rounded-full bg-gradient-to-r from-[#2563eb] to-[#1d4ed8] text-white font-semibold text-xs sm:text-sm tracking-wider overflow-hidden shadow-[0_0_30px_rgba(37,99,235,0.4)] hover:shadow-[0_0_50px_rgba(37,99,235,0.7)] transition-all duration-300 whitespace-nowrap"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.97 }}
-            >
-              <span className="relative z-10">Explore Events</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-[#2563eb] to-[#10b981] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </motion.a>
-
-            <motion.a
-              href="/auth?tab=signup"
-              className="px-6 sm:px-8 py-4 rounded-full border border-[#38bdf8]/40 text-[#38bdf8] font-semibold text-xs sm:text-sm tracking-wider hover:bg-[#38bdf8]/10 hover:border-[#38bdf8] hover:shadow-[0_0_30px_rgba(56,189,248,0.3)] transition-all duration-300 whitespace-nowrap"
-              style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.97 }}
-            >
-              Join the Club
-            </motion.a>
-          </motion.div>
+      <div className="relative z-10 mx-auto flex min-h-[100dvh] w-full max-w-[1500px] flex-col justify-between px-5 pb-8 pt-28 sm:px-8 lg:px-12 lg:pb-10 lg:pt-32">
+        <div className="flex items-center justify-between border-b border-white/15 pb-4 text-[10px] uppercase tracking-[0.3em] text-white/55 sm:text-xs">
+          <span>Observation field / 01</span>
+          <span className="hidden sm:block">22°34′N · 88°22′E</span>
+          <span>Jadavpur / Kolkata</span>
         </div>
 
-        {/* Right side: 3D Planet */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, delay: 0.5 }}
-          className="relative h-[300px] sm:h-[400px] lg:h-[500px]"
-        >
-          {/* Floating particles around planet */}
-          <div className="absolute inset-0 pointer-events-none">
-            {[
-              { top: 25, left: 30, opacity: 0.5, dur: 3.5, delay: 0.2 },
-              { top: 40, left: 65, opacity: 0.7, dur: 4.2, delay: 0.8 },
-              { top: 55, left: 45, opacity: 0.6, dur: 5.0, delay: 1.5 },
-              { top: 30, left: 70, opacity: 0.4, dur: 3.8, delay: 0.4 },
-              { top: 60, left: 35, opacity: 0.8, dur: 6.0, delay: 1.0 },
-              { top: 45, left: 55, opacity: 0.5, dur: 4.5, delay: 1.8 },
-              { top: 35, left: 50, opacity: 0.6, dur: 5.5, delay: 0.6 },
-              { top: 70, left: 60, opacity: 0.4, dur: 3.2, delay: 1.2 },
-              { top: 28, left: 42, opacity: 0.7, dur: 4.8, delay: 0.3 },
-              { top: 50, left: 75, opacity: 0.5, dur: 5.8, delay: 1.6 },
-              { top: 65, left: 28, opacity: 0.6, dur: 3.6, delay: 0.9 },
-              { top: 38, left: 68, opacity: 0.4, dur: 4.0, delay: 1.4 },
-            ].map((p, i) => (
-              <div
-                key={i}
-                className="absolute w-1 h-1 rounded-full bg-[#93c5fd]"
-                style={{
-                  top: `${p.top}%`,
-                  left: `${p.left}%`,
-                  opacity: p.opacity,
-                  animation: `float ${p.dur}s ease-in-out infinite ${p.delay}s`,
-                }}
-              />
-            ))}
+        <div className="grid items-end gap-12 py-16 lg:grid-cols-[minmax(0,0.95fr)_minmax(280px,0.55fr)] lg:gap-20 lg:py-20">
+          <div className="max-w-3xl">
+            <motion.div
+              initial={{ opacity: 0, x: -24 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              className="mb-8 flex items-center gap-3 text-xs uppercase tracking-[0.28em] text-[#e5a04b]"
+            >
+              <span className="h-px w-10 bg-[#e5a04b]" />
+              <span>{siteConfig.university}</span>
+            </motion.div>
+
+            <motion.h1
+              initial={{ opacity: 0, y: 28 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
+              className="text-[clamp(4.5rem,15vw,12rem)] font-semibold leading-[0.78] tracking-[-0.085em] text-white"
+            >
+              ASTRO
+              <span className="block pl-[0.17em] text-[#e5a04b]">SCI</span>
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 18 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.35 }}
+              className="mt-9 max-w-md text-sm leading-7 text-white/65 sm:text-base"
+            >
+              A community exploring the universe through observation, research, and curiosity.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 18 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.48 }}
+              className="mt-9 flex flex-wrap items-center gap-3"
+            >
+              <a
+                href="/auth?tab=signup"
+                className="group inline-flex items-center gap-3 border border-[#e5a04b] bg-[#e5a04b] px-5 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-black transition-colors hover:bg-transparent hover:text-[#e5a04b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e5a04b] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+              >
+                Explore events
+                <MoveUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
+              </a>
+              <a
+                href="/auth?tab=signup"
+                className="inline-flex items-center gap-3 border border-white/25 px-5 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/80 transition-colors hover:border-white hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+              >
+                Join the club
+              </a>
+            </motion.div>
           </div>
-          <SolarSystem3D />
-        </motion.div>
+
+          <motion.aside
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.55 }}
+            className="max-w-xs border-l border-[#e5a04b]/60 pl-5 text-sm leading-6 text-white/55 lg:mb-8"
+          >
+            <p className="mb-7 text-[10px] uppercase tracking-[0.3em] text-[#e5a04b]">The field note</p>
+            <p>
+              Look closer. Every dark field is an archive of light — a place to learn the sky, share the image, and find your way back to wonder.
+            </p>
+            <div className="mt-8 grid grid-cols-2 gap-4 border-t border-white/15 pt-4 text-[10px] uppercase tracking-[0.22em]">
+              <div>
+                <span className="block text-white/35">Signal</span>
+                <span className="text-white/80">Active</span>
+              </div>
+              <div>
+                <span className="block text-white/35">Mode</span>
+                <span className="text-white/80">Curious</span>
+              </div>
+            </div>
+          </motion.aside>
+        </div>
+
+        <div className="flex items-end justify-between border-t border-white/15 pt-4 text-[10px] uppercase tracking-[0.25em] text-white/40 sm:text-xs">
+          <span>AstroSci club / since 2011</span>
+          <a href="/recruitment" className="group flex items-center gap-2 text-white/60 transition-colors hover:text-[#e5a04b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e5a04b]">
+            Scroll to explore
+            <ArrowDownRight className="h-4 w-4 transition-transform group-hover:translate-y-1 group-hover:translate-x-1" aria-hidden="true" />
+          </a>
+        </div>
       </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10"
-      >
-        <span className="text-xs text-gray-600 tracking-widest uppercase" style={{ fontFamily: "'Public Sans', 'Inter', system-ui, sans-serif" }}>Scroll</span>
-        <div className="w-px h-8 bg-gradient-to-b from-gray-600 to-transparent" style={{ animation: "pulse 2s ease-in-out infinite" }} />
-      </motion.div>
-
-      <style>{`
-        @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-10px); }
-        }
-      `}</style>
     </section>
   );
 }
