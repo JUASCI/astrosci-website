@@ -105,7 +105,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.55 }}
-            className="max-w-xs border-l border-[#e5a04b]/60 pl-5 text-sm leading-6 text-white/55 lg:mb-8"
+            className="hero-field-note max-w-xs border-l border-[#e5a04b]/60 pl-5 text-sm leading-6 text-white/55 lg:mb-8"
           >
             <p className="mb-7 text-[10px] uppercase tracking-[0.3em] text-[#e5a04b]">The field note</p>
             <p>
@@ -126,7 +126,7 @@ export default function HeroSection() {
 
         <div className="flex items-end justify-between border-t border-white/15 pt-4 text-[10px] uppercase tracking-[0.25em] text-white/40 sm:text-xs">
           <span>AstroSci club / since 2011</span>
-          <a href="/recruitment" className="group flex items-center gap-2 text-white/60 transition-colors hover:text-[#e5a04b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e5a04b]">
+          <a href="/recruitment" className="hero-scroll-cue group flex items-center gap-2 text-white/60 transition-colors hover:text-[#e5a04b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e5a04b]">
             Scroll to explore
             <ArrowDownRight className="h-4 w-4 transition-transform group-hover:translate-y-1 group-hover:translate-x-1" aria-hidden="true" />
           </a>

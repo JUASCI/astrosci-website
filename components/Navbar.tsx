@@ -78,7 +78,7 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className={`max-w-7xl mx-auto px-6 flex items-center justify-between transition-[padding] duration-500 ${scrolled ? "py-3" : "py-4"}`}>
         {/* Logo */}
         <motion.div className="flex items-center gap-3 cursor-pointer" whileHover={{ scale: 1.03 }}>
           <Image src={siteConfig.assets.logo} alt={`${siteConfig.clubName} Logo`} width={36} height={36} className="h-9 w-9" />

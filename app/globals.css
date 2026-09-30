@@ -87,6 +87,40 @@ input:focus, textarea:focus, select:focus, button:focus-visible, a:focus-visible
   outline-offset: 3px;
 }
 
+.hero-field-note {
+  position: relative;
+  border-left-color: transparent !important;
+}
+
+.hero-field-note::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(var(--accent), rgba(229, 160, 75, 0.08));
+  transform: scaleY(0);
+  transform-origin: top;
+  animation: field-note-line 1.1s cubic-bezier(0.16, 1, 0.3, 1) 1.15s forwards;
+}
+
+.hero-scroll-cue::before {
+  content: "";
+  width: 1px;
+  height: 26px;
+  background: linear-gradient(var(--accent), transparent);
+  transform: scaleY(0.55);
+  transform-origin: top;
+  animation: scroll-cue-pulse 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes field-note-line { to { transform: scaleY(1); } }
+@keyframes scroll-cue-pulse {
+  0%, 100% { opacity: 0.35; transform: scaleY(0.55) translateY(0); }
+  50% { opacity: 1; transform: scaleY(1) translateY(4px); }
+}
+
 @media (pointer: fine) {
   .observatory-cursor-enabled a,
   .observatory-cursor-enabled button,
@@ -119,6 +153,8 @@ input:focus, textarea:focus, select:focus, button:focus-visible, a:focus-visible
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+  .hero-field-note::before { transform: scaleY(1); animation: none; }
+  .hero-scroll-cue::before { animation: none; opacity: 0.6; transform: scaleY(0.8); }
 }
 
 /* Typography system: condensed observatory headlines, calm reading copy, precise metadata. */
