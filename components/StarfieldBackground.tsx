@@ -40,6 +40,8 @@ export default function StarfieldBackground() {
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const mobile = window.innerWidth < 768;
 
     const setSize = () => {
       canvas.width = window.innerWidth;
@@ -47,9 +49,9 @@ export default function StarfieldBackground() {
     };
     setSize();
 
-    // Stars: generate 600–1200
+    // Keep the atmospheric field sparse, especially on mobile and reduced-motion setups.
     const stars: Star[] = [];
-    const starCount = Math.floor(Math.random() * 601) + 600;
+    const starCount = reducedMotion ? 280 : mobile ? 420 : Math.floor(Math.random() * 301) + 520;
     for (let i = 0; i < starCount; i++) {
       const baseOpacity = Math.random() * 0.5 + 0.3;
       stars.push({
@@ -158,7 +160,7 @@ export default function StarfieldBackground() {
       });
 
       // Spawn constellation lines every 6–10 seconds
-      if (time - lastConstellationTime > 6000 + Math.random() * 4000) {
+      if (!reducedMotion && time - lastConstellationTime > 6000 + Math.random() * 4000) {
         spawnConstellation();
         lastConstellationTime = time;
       }
@@ -201,7 +203,7 @@ export default function StarfieldBackground() {
       }
 
       // Spawn shooting stars every 5–12 seconds
-      if (time - lastShootingStarTime > 5000 + Math.random() * 7000) {
+      if (!reducedMotion && time - lastShootingStarTime > 9000 + Math.random() * 9000) {
         spawnShootingStar();
         lastShootingStarTime = time;
       }

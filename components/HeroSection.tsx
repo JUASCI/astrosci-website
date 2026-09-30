@@ -1,17 +1,28 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 import { ArrowDownRight, MoveUpRight } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
 
 export default function HeroSection() {
+  const heroRef = useRef<HTMLElement>(null);
+  const reducedMotion = useReducedMotion();
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ["start start", "end start"],
+  });
+  const imageY = useTransform(scrollYProgress, [0, 1], [0, 56]);
+  const contentY = useTransform(scrollYProgress, [0, 1], [0, -24]);
+
   return (
-    <section id="home" className="relative isolate min-h-[100dvh] overflow-hidden bg-[#050505]">
+    <section ref={heroRef} id="home" className="relative isolate min-h-[100dvh] overflow-hidden bg-[#050505]">
       <motion.div
         initial={{ scale: 1.04, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
         className="absolute inset-0 z-0"
+        style={{ y: reducedMotion ? 0 : imageY, scale: reducedMotion ? 1 : 1.04 }}
         aria-hidden="true"
       >
         <img
@@ -34,7 +45,10 @@ export default function HeroSection() {
           <span>Jadavpur / Kolkata</span>
         </div>
 
-        <div className="grid items-end gap-12 py-16 lg:grid-cols-[minmax(0,0.95fr)_minmax(280px,0.55fr)] lg:gap-20 lg:py-20">
+        <motion.div
+          className="grid items-end gap-12 py-16 lg:grid-cols-[minmax(0,0.95fr)_minmax(280px,0.55fr)] lg:gap-20 lg:py-20"
+          style={{ y: reducedMotion ? 0 : contentY }}
+        >
           <div className="max-w-3xl">
             <motion.div
               initial={{ opacity: 0, x: -24 }}
@@ -108,7 +122,7 @@ export default function HeroSection() {
               </div>
             </div>
           </motion.aside>
-        </div>
+        </motion.div>
 
         <div className="flex items-end justify-between border-t border-white/15 pt-4 text-[10px] uppercase tracking-[0.25em] text-white/40 sm:text-xs">
           <span>AstroSci club / since 2011</span>

@@ -87,6 +87,17 @@ input:focus, textarea:focus, select:focus, button:focus-visible, a:focus-visible
   outline-offset: 3px;
 }
 
+@media (pointer: fine) {
+  .observatory-cursor-enabled a,
+  .observatory-cursor-enabled button,
+  .observatory-cursor-enabled input,
+  .observatory-cursor-enabled textarea,
+  .observatory-cursor-enabled select,
+  .observatory-cursor-enabled [data-cursor] {
+    cursor: none;
+  }
+}
+
 @keyframes glow-pulse {
   0%, 100% { box-shadow: 0 0 18px rgba(229, 160, 75, 0.18); }
   50% { box-shadow: 0 0 34px rgba(229, 160, 75, 0.38); }
@@ -98,6 +109,11 @@ input:focus, textarea:focus, select:focus, button:focus-visible, a:focus-visible
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .observatory-cursor-enabled a,
+  .observatory-cursor-enabled button,
+  .observatory-cursor-enabled input,
+  .observatory-cursor-enabled textarea,
+  .observatory-cursor-enabled select { cursor: auto; }
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;

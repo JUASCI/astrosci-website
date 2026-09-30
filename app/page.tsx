@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import CinematicIntro from "@/components/CinematicIntro";
 import HeroSection from "@/components/HeroSection";
 import RecruitmentBanner from "@/components/RecruitmentBanner";
 import ProfileGreeting from "@/components/ProfileGreeting";
@@ -15,6 +16,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main className="relative min-h-screen">
+      <CinematicIntro />
       <Navbar />
       <HeroSection />
       <RecruitmentBanner />

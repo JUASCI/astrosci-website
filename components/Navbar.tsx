@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { supabase, isSupabaseConfigured } from "@/lib/supabaseClient";
 import { siteConfig } from "@/config/siteConfig";
 
@@ -26,6 +27,8 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isSignedIn, setIsSignedIn] = useState(false);
   const [profileImage, setProfileImage] = useState("");
+  const pathname = usePathname();
+  const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -117,14 +120,14 @@ export default function Navbar() {
             ) : (
               <Link key={item.label} href={item.href}>
                 <motion.span
-                  className="relative px-4 py-2 text-sm text-gray-300 hover:text-white transition-colors group cursor-pointer"
+                  className={`relative px-4 py-2 text-sm transition-colors group cursor-pointer ${isActive(item.href) ? "text-white" : "text-gray-300 hover:text-white"}`}
                   style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 * i + 0.3 }}
                 >
                   {item.label}
-                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-gradient-to-r from-[#b7682c] to-[#c87938] group-hover:w-4/5 transition-all duration-300 rounded-full" />
+                  <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-[2px] bg-gradient-to-r from-[#b7682c] to-[#c87938] transition-all duration-300 rounded-full ${isActive(item.href) ? "w-4/5" : "w-0 group-hover:w-4/5"}`} />
                 </motion.span>
               </Link>
             )
@@ -231,7 +234,7 @@ export default function Navbar() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="block py-3 text-gray-300 hover:text-[#e5a04b] border-b border-white/5 text-sm tracking-wider"
+                  className={`block py-3 border-b border-white/5 text-sm tracking-wider ${isActive(item.href) ? "text-[#e5a04b]" : "text-gray-300 hover:text-[#e5a04b]"}`}
                   style={{ fontFamily: "'DM Sans', 'Inter', system-ui, sans-serif" }}
                   onClick={() => setMenuOpen(false)}
                 >
